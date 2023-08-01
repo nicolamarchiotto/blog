@@ -1,19 +1,15 @@
-{% extends "base.html" %}
+{% extends "basic.html" %}
+
 {% block content %}
-<div class="container is-fluid" style="min-height: 100vh;">
-  <div class="is-flex is-flex-direction-column is-justify-content-center" style="min-height: 100vh;">
-    <h1>Tags</h1>
-    {% if terms %}
-    {% for term in terms %}
-    <div class="card mb-5">
-      <header class="card-header">
-        <p class="card-header-title">
-          <a href="{{ term.permalink | safe }}">{{ term.name }}</a> ({{ term.pages | length }})
-        </p>
-      </header>
-    </div>
-    {% endfor %}
-    {% endif %}
-  </div>
+<div class="archive animated fadeInDown">
+    <ul class="list-with-title">
+      <div class="listing-title">{{ trans(key="tags", lang=lang) }}</div>
+          {% for term in terms %}
+          <li class="tag-list-item">
+              <a class="tagname" href="{{ term.permalink }}">{{ term.name }}</a>
+              <span class="tagcount">{{ term.pages | length }}</span>
+          </li>
+          {% endfor %}
+    </ul>
 </div>
 {% endblock content %}

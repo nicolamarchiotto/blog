@@ -1,6 +1,0 @@
-[submodule "themes/themes/zola-resume"]
-	path = themes/themes/zola-resume
-	url = git@github.com:alongwy/zola-resume.git
-[submodule "zola-resume"]
-	path = zola-resume
-	url = git@github.com:alongwy/zola-resume.git

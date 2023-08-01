@@ -1,35 +1,23 @@
-{% extends "base.html" %}
-
-{% block rss %}
-{% set rss_path = "tags/" ~ term.name ~ "/rss.xml" %}
-<link rel="alternate" type="application/rss+xml" title="RSS"
-  href="{{ get_url(path=rss_path, trailing_slash=false) }}">
-{% endblock rss %}
+{% extends "basic.html" %}
 
 {% block content %}
-<div class="container is-fluid" style="min-height: 100vh;">
-  <div class="is-flex is-flex-direction-column is-justify-content-center" style="min-height: 100vh;">
-    <h1>{{ term.name }}</h1>
-    {% if term.pages %}
-    {% for page in term.pages %}
-    <div class="card mb-5">
-      <header class="card-header">
-        <p class="card-header-title">
-          <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-        </p>
-      </header>
-      {% if page.description %}
-      <div class="card-content">
-        <div class="content">
-          {{ page.description | markdown() | safe }}
-          <a href="{{ page.permalink }}">Read More</a>
+<div class="archive animated fadeInDown">
+    <ul class="list-with-title">
+        <div class="archive">
+        <div class="listing-title">{{ term.name }}</div>
+        <ul class="listing">
+        {% for post in term.pages %}
+            <div class="listing-item">
+                <div class="listing-post">
+                    <a href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a>
+                    <div class="post-time">
+                        <span class="date">{{ post.date | date(format=trans(key="date_format", lang=lang)) }}</span>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </ul>
         </div>
-      </div>
-      {% endif %}
-    </div>
-    {% endfor %}
-    {% endif %}
-  </div>
+    </ul>
 </div>
-
 {% endblock content %}
