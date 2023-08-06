@@ -7,7 +7,7 @@ page_template = "publication-page.html"
 insert_anchor_links = "right"
 weight = 2
 extra.index_title = "Recent Publications"
-extra.index_show = true
+extra.index_show = false
 extra.hidden_nav = false
 
 extra.publications_types = [
