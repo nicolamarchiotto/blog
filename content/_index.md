@@ -13,31 +13,33 @@ interests = [
 ]
 
 [[extra.education.courses]]
-  course = "Latest degree"
-  institution = "Some acamedy"
-  year = 2020
+  course = "Master's degree in Computer Engineering for Robotics and Smart Industry"
+  institution = "UNIVR"
+  year = "2020-2023"
+  mark = "110L/110"
 
 [[extra.education.courses]]
-  course = "Another degree"
-  institution = "Here and there"
-  year = 2016
+  course = "Bachelor Degree in Computer Science"
+  institution = "UNIVR"
+  year = "2017-2020"
+  mark = "109/110"
 
 [[extra.education.courses]]
-  course = "First degree"
-  institution = "My academy"
-  year = 2015
+  course = "High School"
+  institution = "Liceo Scientifico G. Galilei Verona"
+  year = "2012-2017"
 
 [[extra.avatar_icons]]
   icon = "github"
-  link = "https://github.com/adfaure"
+  link = "https://github.com/nicolamarchiotto"
 [[extra.avatar_icons]]
   icon = "gitlab"
-  link = "https://gitlab.com/adfaure"
+  link = "https://gitlab.com/ziapo98"
 [[extra.avatar_icons]]
   icon = "linkedin"
-  link = "https://www.linkedin.com/in/adrien-faure-9958978b/"
+  link = "https://www.linkedin.com/in/nicola-marchiotto-3bb3a3171/"
 +++
 
-Welcome with the kodama theme, inspired from hugo academic theme.
-
-This theme is build with tailwindcss, and uses no JavaScript. It is meant to be simple, yet pretty.
+Hi, I am Nicola Marchiotto, a Robotics and Software Engineer who likes tinkering with everything related to Computer Science with little sparks of Electronics and Mechanics.
+<br><br>
+This is a static website I developed to easily share my portfolio and to track my IT related projects.
