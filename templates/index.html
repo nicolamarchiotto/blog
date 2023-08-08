@@ -4,7 +4,7 @@
 
 {% block biography %}
 <div class="">
-  <div class="flex md:flex-row flex-wrap sm:flex-nowrap justify-center container max-w-screen-xl py-10 ">
+  <div class="flex md:flex-row flex-wrap sm:flex-nowrap justify-center container max-w-screen-xl py-10 px-2">
     <div class="basis-full sm:basis-2/5 ">
       <div class="container mx-auto">
         {% set image = resize_image(path=config.extra.avatar, format="webp", width=208, height=208) %}
@@ -42,33 +42,52 @@
       <p class="prose prose-indigo mx-6">
         {{ section.content | safe }}
       </p>
-      <div class="flex md:flex-row flex-wrap sm:flex-nowrap justify-center container max-w-4xl sm:py-10 py-4">
-        <!-- <div class="basis-full sm:basis-1/2 pb-4 w-12 ">
-          <h2 class="font-bold font-sans break-normal text-gray-900 text-2xl py-1">{{trans(key="Interests", lang=lang)}}</h2>
-          <ul class="list-disc pl-4">
-            {% for interest in section.extra.interests %}
-            <li class="py-1"> {{ interest }} </li>
-            {% endfor %}
-          </ul>
-        </div> -->
-        <div class="basis-full ">
-          <h2 class="font-bold font-sans break-normal text-gray-900 text-2xl py-1">{{trans(key="Education", lang=lang)}}</h2>
-          <ul class="">
-            {% for course in section.extra.education.courses %}
-            <li class="py-1">
-              <div class="flex flex-row flex-wrap">
+      
+      <!-- EXPERIENCE -->
+      <div class="basis-full py-4 ">
+        <h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-2">{{trans(key="Experience", lang=lang)}}</h2>
+        <ul class="">
+          {% for work in section.extra.experience.works %}
+          <li class="py-1">
+            <div class="flex flex-row flex-wrap">
+              <div class="basis-full">
+                <i>{{ icons::factory(icon="work",classes="inline h-6 w-6 flex-no-shrink") }}</i> {{ work.company }}
+              </div>
+              <div class="px-7-p">
                 <div class="basis-full">
-                  <i>{{ icons::factory(icon="academic",classes="inline h-6 w-6 flex-no-shrink") }}</i> {{ course.course }}
+                  {{work.description}}
                 </div>
                 <div class="basis-full text-gray-400">
-                {{ course.institution }}, {{course.year}}
+                  {{ work.position }}, {{work.year}}
                 </div>
               </div>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
+
+      <!-- EDUCATION -->
+      <div class="basis-full py-4">
+        <h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-2">{{trans(key="Education", lang=lang)}}</h2>
+        <ul class="">
+          {% for course in section.extra.education.courses %}
+          <li class="py-1">
+            <div class="flex flex-row flex-wrap">
+              <div class="basis-full">
+                <i>{{ icons::factory(icon="academic",classes="inline h-6 w-6 flex-no-shrink") }}</i> {{ course.course }}
+              </div>
+              <div class="px-7-p">
+                <div class="basis-full text-gray-400">
+                  {{ course.institution }}, {{course.year}}
+                </div>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      
       
     </div>
   </div>

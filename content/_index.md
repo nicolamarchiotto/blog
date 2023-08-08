@@ -11,6 +11,18 @@ interests = [
   "Martian food",
   "Quantic science"
 ]
+[[extra.experience.works]]
+  company = "Exor International"
+  position = "Software Engineer"
+  year = "2023-present"
+  description = "Software development for the automation industry, development of machines for internal quality assurance"
+
+[[extra.experience.works]]
+  company = "Exor International"
+  position = "Software Engineer"
+  year = "2023-present"
+  description = "Software development for the automation industry, development of machines for internal quality assurance"
+
 
 [[extra.education.courses]]
   course = "Master's degree in Computer Engineering for Robotics and Smart Industry"
@@ -40,6 +52,7 @@ interests = [
   link = "https://www.linkedin.com/in/nicola-marchiotto-3bb3a3171/"
 +++
 
-Hi, I am Nicola Marchiotto, a Robotics and Software Engineer who likes tinkering with everything related to Computer Science with little sparks of Electronics and Mechanics.
+Hi, I am Nicola Marchiotto, a Robotics and Software Engineer who likes tinkering with everything related to Computer Science, with little sparks of Electronics and Mechanics.
 <br><br>
-This is a static website I developed to easily share my portfolio and to track my IT related projects.
+This is a static website I developed to easily share my portfolio and the noteworthy home projects I undertake as hobby.
+<br><br>

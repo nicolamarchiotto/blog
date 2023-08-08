@@ -14,6 +14,7 @@ build_search_index = false
 [translations]
 Biography = "About Me"
 Interests = "Interests"
+Experience = "Experience"
 Education = "Education"
 toc = "Table of Contents"
 Published = "Published"
