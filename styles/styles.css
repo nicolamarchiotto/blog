@@ -21,8 +21,33 @@
   padding-left: 1.75rem;
   padding-right: 1.75rem;
 }
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
 
 .px-7-p {
   padding-left: 1.8rem;
   padding-right: 1.8rem;
+}
+
+.colored-box {
+  background-color: #2563eb; 
+  border-radius: 6px; 
+  padding-top: 1px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: white;
+  width:fit-content;
+  text-align: center;
+  margin-right: 6px;
+  font-size: small;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.text-myblue {
+  --tw-text-opacity: 1;
+  color: #2563eb;
 }

@@ -15,13 +15,29 @@ interests = [
   company = "Exor International"
   position = "Software Engineer"
   year = "2023-present"
-  description = "Software development for the automation industry, development of machines for internal quality assurance"
+  description = "Software development for the automation industry and of machines for internal quality assurance"
+  skills = ["ML Vision Based QA", "Docker", "CoDeSys", " OPC UA", "JMobile", "C++", "Qt"]
 
 [[extra.experience.works]]
-  company = "Exor International"
-  position = "Software Engineer"
-  year = "2023-present"
-  description = "Software development for the automation industry, development of machines for internal quality assurance"
+  company = "Altair Robotics Lab"
+  position = "Research Fellow"
+  year = "2022–2023"
+  description = "Refinement of a prototype for robot assisted vertebroplasty. Implementation of the software for performing robot registration, planning the surgery and controlling the hardware"
+  skills = ["Medical Image Analysis", "Robot-Image Registration", "Robot Control", "Trajectory Planning"]
+   
+[[extra.experience.works]]
+  company = "EDALAB s.r.l."
+  position = "Software Developer"
+  year = "2021–2022"
+  description = "Development of Web and Mobile applications in the IoT and HealthCare environments using the React and React Native Frameworks. Use of Bluetooth and BluetoothLE communication protocols for Android app development"
+  skills = ["React", "React Native", "JavaScript", "TypeScript", "Android BLE"]
+    
+[[extra.experience.works]]
+  company = "Makeroni"
+  position = "Waiter During Weekends"
+  year = "2016–2020"
+  description = ""
+  skills = []
 
 
 [[extra.education.courses]]
@@ -41,6 +57,8 @@ interests = [
   institution = "Liceo Scientifico G. Galilei Verona"
   year = "2012-2017"
 
+
+
 [[extra.avatar_icons]]
   icon = "github"
   link = "https://github.com/nicolamarchiotto"
@@ -52,7 +70,9 @@ interests = [
   link = "https://www.linkedin.com/in/nicola-marchiotto-3bb3a3171/"
 +++
 
-Hi, I am Nicola Marchiotto, a Robotics and Software Engineer who likes tinkering with everything related to Computer Science, with little sparks of Electronics and Mechanics.
-<br><br>
-This is a static website I developed to easily share my portfolio and the noteworthy home projects I undertake as hobby.
+Hi, I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to easily present mysellf to the world and to keep track of the noteworthy home projects I embrace.
+
+<br>
+Computer Science is my passsion, and when I don't practice it as work, I am usually behind the pc working on something IT related. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.
+
 <br><br>
