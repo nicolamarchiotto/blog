@@ -3,40 +3,40 @@
 {% block content %}
 
 {% block biography %}
-<div class="">
-  <div class="flex md:flex-row flex-wrap sm:flex-nowrap justify-end container max-w-screen-xl py-10 px-2">
-    <div class="basis-full sm:basis-2/5 sm:fixed sm:left-2 sm:top-8 sm:justify-center ">
-      {% set image = resize_image(path=config.extra.avatar, format="webp", width=208, height=208) %}
-      <img class="object-center w-52 h-52 rounded-full mx-auto" src="{{image.url}}" alt="Profile image"/>
-      <h1 class="text-center font-bold text-gray-900 text-3xl py-4">{{ config.title }}</h1>
-      
-      <div class="flex flex-row flex-wrap container py-4 justify-center">
-        {% for icon in section.extra.avatar_icons %}
-          <div class="basis p-3 ">
-            <a href="{{icon.link}}" target="_blank"><i>{{ icons::factory(icon=icon.icon,classes="inline h-12 w-12 flex-no-shrink stroke-blue-600 hover:stroke-blue-800 visited:stroke-purple-600 fill-blue-600 visited:fill-purple-600 hover:fill-blue-800 ") }}</i></a>
-          </div>
-        {% endfor %}
-      </div>
-
-      <div>
-        <h2 class="text-center text-md font-medium text-gray-900 ">Contact me at</h2>      
-        <h2 class="text-center text-md font-bold text-gray-900">{{ config.extra.email  }}</h2>          
-      </div>
-      <div class="py-10 text-center ">
-        <h1 class="text-center text-md font-medium text-gray-900">Get my CV&nbsp</h1> 
-        <div class="flex flex-row justify-center">     
-          <a class="underline font-bold text-myblue" href="/cv/CV_eng.pdf" target="_blank" download="Marchiotto_CV_Eng.pdf">
-            ENG
-          </a>   
-          &nbsp&nbsp&nbsp
-          <a class="underline font-bold text-myblue" href="/cv/CV_ita.pdf" target="_blank" download="Marchiotto_CV_ITA.pdf">
-            ITA
-          </a>         
+<div class="container ">
+  <div class="flex container md:flex-row flex-col flex-wrap md:flex-nowrap justify-end md:justify-end items-center px-8">
+    <div class="md:w-2/5 md:left-0 md:fixed mt-8 md:top-20 flex flex-col flex-wrap justify-center">
+        {% set image = resize_image(path=config.extra.avatar, format="webp", width=208, height=208) %}
+        <img class="object-center w-52 h-52 rounded-full mx-auto" src="{{image.url}}" alt="Profile image"/>
+        <h1 class="text-center font-bold text-gray-900 text-3xl py-4">{{ config.title }}</h1>
+        
+        <div class="flex flex-row flex-wrap container py-4 justify-center">
+          {% for icon in section.extra.avatar_icons %}
+            <div class="basis p-3 ">
+              <a href="{{icon.link}}" target="_blank"><i>{{ icons::factory(icon=icon.icon,classes="inline h-12 w-12 flex-no-shrink stroke-blue-600 hover:stroke-blue-800 visited:stroke-purple-600 fill-blue-600 visited:fill-purple-600 hover:fill-blue-800 ") }}</i></a>
+            </div>
+          {% endfor %}
         </div>
-      </div>
+
+        <div>
+          <h2 class="text-center text-md font-medium text-gray-900 ">Contact me at</h2>      
+          <h2 class="text-center text-md font-bold text-gray-900">{{ config.extra.email  }}</h2>          
+        </div>
+        <div class="py-10 text-center ">
+          <h1 class="text-center text-md font-medium text-gray-900">Get my CV&nbsp</h1> 
+          <div class="flex flex-row justify-center">     
+            <a class="underline font-bold text-myblue" href="/cv/CV_eng.pdf" target="_blank" download="Marchiotto_CV_Eng.pdf">
+              ENG
+            </a>   
+            &nbsp&nbsp&nbsp
+            <a class="underline font-bold text-myblue" href="/cv/CV_ita.pdf" target="_blank" download="Marchiotto_CV_ITA.pdf">
+              ITA
+            </a>         
+          </div>
+        </div>
     </div>
-    <div class="basis-full sm:basis-3/5 right-0 ">
-      <h1 class="font-bold font-sans break-normal text-gray-900 text-3xl sm:text-5xl pb-4">{{trans(key="Biography", lang=lang)}}</h1>
+    <div class="md:w-3/5 md:mr-0 md:mt-8">
+      <h1 class="font-bold font-sans break-normal text-gray-900 text-3xl md:text-5xl pb-4">{{trans(key="Biography", lang=lang)}}</h1>
       <p class="prose prose-indigo mx-6">
         {{ section.content | safe }}
       </p>

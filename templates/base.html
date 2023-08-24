@@ -34,13 +34,13 @@
   {% endblock head -%}
 </head>
 
-<body class="bg-white">
+<body class="bg-white container">
   <!-- Top nav bar -->
   {% block nav -%}
     {{ macros_nav::nav(website_title=config.title) }}
   {% endblock nav -%}
   <!-- Container -->
-  <div class="mt-10">
+  <div class="mt-10 container">
   {% block content -%}
   {% endblock content -%}
   </div>

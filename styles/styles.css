@@ -51,3 +51,26 @@
   --tw-text-opacity: 1;
   color: #2563eb;
 }
+
+
+.sm\:left-1\/10  {
+  left: 10%;
+}
+
+.sm\:left-1\/20  {
+  left: 5%;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.sm\:centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
