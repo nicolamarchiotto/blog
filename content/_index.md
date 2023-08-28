@@ -1,7 +1,8 @@
 +++
 title = "Home"
 date = 2020-07-09
-page_template="page.html"
+page_template="index.html"
+path = "home"
 
 [extra]
 title = ""

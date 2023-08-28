@@ -13,3 +13,4 @@ Note that, for the moment the generation of the css is not automated. As a resul
 
 ## Future Notes
 start customizing blog
+
