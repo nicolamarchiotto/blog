@@ -3,8 +3,7 @@
 {% block content %}
 
 {% block biography %}
-<!-- mt-24 sm:mt-16 -->
-<div class="w-full px-8 pt-16 ">
+<div class="w-full px-4 ">
   <div class="flex w-full xl:flex-row flex-col flex-wrap xl:flex-nowrap justify-end xl:justify-end items-center">
     <div class="w-full xl:w-1/4 xl:left-0 xl:fixed xl:top-20 flex flex-col flex-wrap justify-center">
         {% set image = resize_image(path=config.extra.avatar, format="webp", width=208, height=208) %}

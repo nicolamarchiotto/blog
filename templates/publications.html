@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="container max-w-6xl mx-auto px-8">
-  <div class="font-sans pt-16 pb-8">
+  <div class="font-sans pb-4">
     <h1 class="font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-4xl">{{ section.title }}</h1>
   </div>
 
@@ -11,7 +11,7 @@
   </article>
 
   {% for publication_type in section.extra.publications_types -%}
-    <div class ="prose py-4">
+    <div class ="prose py-6">
       <h2 class=""> {{publication_type.title}} </h2>
     </div>
 

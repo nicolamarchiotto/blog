@@ -80,25 +80,25 @@
     <p class="text-sm text-slate-400">{{publication::details(page=page, bibtags=bibdata, links_allowed=false)}}</p>
 
     {% if show_description and page.description -%}
-    <p class="text-sm py-1"> {{ page.description | markdown(inline=true) | safe }} </p>
+    <p class="text-sm py-1"> {{ page.description | markdown(inline=true) | truncate(length=250) | safe }} </p>
     {% elif show_description and bibdata.abstract -%}
     <p class="text-sm pb-1"> {{ bibdata.abstract | safe | truncate(length=250) }} </p>
     {% endif -%}
 
     {% if show_urls -%}
       {% if page.extra.url_pdf %}
-      <a class="rounded-md border-solid border border-blue-600 inline-flex items-center text-blue-600 justify-center px-2 py-1 mr-2 text-xs font-bold" target="_blank" href="{{ page.extra.url_pdf }}"> pdf </a>
+      <a class="rounded-md border-solid border border-blue-600 inline-flex items-center text-blue-600 justify-center px-2 py-1 mt-2 mr-2 text-xs font-bold" target="_blank" href="{{ page.extra.url_pdf }}"> pdf </a>
       {% elif page.extra.pdf -%}
-      <a class="rounded-md border-solid border border-blue-600 inline-flex items-center text-blue-600 justify-center px-2 py-1 mr-2 text-xs font-bold" target="_blank" href="{{ config.base_url ~ page.path ~ page.extra.pdf }}"> pdf </a>
+      <a class="rounded-md border-solid border border-blue-600 inline-flex items-center text-blue-600 justify-center px-2 py-1 mt-2 mr-2 text-xs font-bold" target="_blank" href="{{ config.base_url ~ page.path ~ page.extra.pdf }}"> pdf </a>
       {% endif -%}
 
       {% if page.extra.url_slides %}
-      <a class="rounded-md border-solid border border-blue-600 inline-flex items-center text-blue-600 justify-center px-2 py-1 mr-2 text-xs font-bold" target="_blank" href="{{ page.extra.url_slides }}"> slides </a>
+      <a class="rounded-md border-solid border border-blue-600 inline-flex items-center text-blue-600 justify-center px-2 py-1 mt-2 mr-2 text-xs font-bold" target="_blank" href="{{ page.extra.url_slides }}"> slides </a>
       {% elif page.extra.slides -%}
-      <a class="rounded-md border-solid border border-blue-600 inline-flex items-center text-blue-600 justify-center px-2 py-1 mr-2 text-xs font-bold" target="_blank" href="{{ config.base_url ~ page.path ~ page.extra.slides }}"> slides </a>
+      <a class="rounded-md border-solid border border-blue-600 inline-flex items-center text-blue-600 justify-center px-2 py-1 mt-2 mr-2 text-xs font-bold" target="_blank" href="{{ config.base_url ~ page.path ~ page.extra.slides }}"> slides </a>
       {% endif -%}
       {% if bibdata and bibdata.url -%}
-      <a class="rounded-md border-solid border border-blue-600 inline-flex items-center text-blue-600 justify-center px-2 py-1 mr-2 text-xs font-bold" target="_blank" href="{{bibdata.url}}"> url </a>
+      <a class="rounded-md border-solid border border-blue-600 inline-flex items-center text-blue-600 justify-center px-2 py-1 mt-2 mr-2 text-xs font-bold" target="_blank" href="{{bibdata.url}}"> url </a>
       {% endif -%}
     {% endif -%}
   </a>

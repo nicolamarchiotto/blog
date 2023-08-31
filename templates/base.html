@@ -40,15 +40,17 @@
     {{ macros_nav::nav(website_title=config.title) }}
   {% endblock nav -%}
   <!-- Container -->
+  <div class="mt-28 xs:mt-26 sm:mt-16">
   {% block content -%}
   {% endblock content -%}
+  </div>
   <!-- <div class="sticky bottom-0 px-3">
     <a href="#page-top">Back to top of page</a>
   </div> -->
   {% block footer -%}
   <footer class="bg-white">
     <div class="bg-white text-gray-400 container max-w-6xl mx-auto py-2 text-center">
-      Made with <a class="underline" target="_blank" href="https://getzola.org">Zola</a>
+      Made with <a class="underline" target="_blank" href="https://www.getzola.org/">Zola</a>
     </div>
   </footer>
   {% endblock footer -%}

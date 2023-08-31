@@ -1,22 +1,22 @@
 +++
 date = 2020-07-09
-title = "Research"
+title = "Publications"
 sort_by = "date"
 template = "publications.html"
 page_template = "publication-page.html"
 insert_anchor_links = "right"
-weight = 2
+weight = 1
 extra.index_title = "Recent Publications"
 extra.index_show = false
 extra.hidden_nav = false
 
 extra.publications_types = [
-  { title = "Journal articles", type = "journals" },
   { title = "Thesis", type = "thesis" },
-  { title = "Conferences and workshops ", type = "conferences" }
+  { title = "Conferences ", type = "conferences" },
+  { title = "Workshops ", type = "workshop" }
 ]
 +++
 
-## Topic of interest
+<!-- ## Topic of interest
 
-My research activities focuses on rainbows.
+My research activities focuses on rainbows. -->
