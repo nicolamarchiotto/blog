@@ -7,13 +7,21 @@
     <h1 class="font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-4xl">{{section.title}}</h1>
   </div>
 
-  <ul>
-  {% for page in section.pages %}
-    <li class="pb-3">
-      {{ blog::page_summary(page=page) }}
-    </li>
-  {% endfor %}
-  </ul>
+  AAAAAAAAAAAAAAAA
+  <div class="posts flex-wrap sm:flex-nowrap">
+    {% for page in section.pages %}
+    <a class="w-full flex justify-center" href="{{config.base_url}}/{{page.path}}">
+      <div class="post-container" >
+        <img src="{{page.extra.header_img}}" class="post-img" data-placeholder-background="darkgrey">
+        <div class="post-text">
+          <h2 class="post-title">{{ page.title | safe }}</h2>
+          <span class="post-description">{{ page.description | safe }}</span>
+          <span class="post-date">{{ page.date | date(format="%Y/%m/%d") }}</span>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
 
 </div>
 {% endblock content %}

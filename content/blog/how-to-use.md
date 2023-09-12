@@ -1,9 +1,9 @@
 +++
 title = "How to use this theme"
 date = 2022-03-16
-description = """
-Example of how to use kodama theme.
-"""
+description = "Example of how to use kodama theme."
+[extra]
+header_img = "https://live.staticflickr.com/65535/52831738797_416eeff23a_k_d.jpg"
 +++
 
 ## Summary

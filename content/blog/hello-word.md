@@ -4,6 +4,8 @@ date = 2021-03-16
 description = """
 Example of blog post
 """
+[extra]
+header_img = "https://live.staticflickr.com/65535/52831738797_416eeff23a_k_d.jpg"
 +++
 
 ## Summary

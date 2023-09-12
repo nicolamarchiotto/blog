@@ -56,14 +56,12 @@
       </div>
     </div>
     <div class="sm:basis-3/5 grow">
-      <ul>
         {% for page in section.pages | slice(end=show_element) -%}
           <li class="pb-3">
               {{ blog::page_summary(page=page, show_wordcount=show_wordcount, show_description=show_description) }}
           </li>
         {% endfor %}
         <li><a href="{{section.permalink | safe}}" class="text-blue-600 hover:text-blue-800">...</a></li>
-      </ul>
     </div>
   </div>
 {% endmacro %}
