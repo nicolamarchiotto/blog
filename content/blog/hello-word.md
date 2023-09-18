@@ -5,7 +5,7 @@ description = """
 Example of blog post
 """
 [extra]
-header_img = "https://live.staticflickr.com/65535/52831738797_416eeff23a_k_d.jpg"
+header_img = "/static/img/wp3788160.webp"
 +++
 
 ## Summary
