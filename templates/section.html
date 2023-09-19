@@ -10,16 +10,16 @@
   AAAAAAAAAAAAAAAA
   <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
     {% for page in section.pages %}
-    <a class="w-full flex justify-center" href="{{config.base_url}}/{{page.path}}">
+    <a class="w-full flex justify-center items-center flex-col" href="{{config.base_url}}/{{page.path}}">
       <div class="post-container">
         {% set image = resize_image(path=page.extra.header_img, format="webp",  width=1080, height=1080, op="scale") %}
         <img class="post-img" src="{{image.url}}" alt="Profile image"/>
         <!-- <img src="{{page.extra.header_img}}" class="post-img" data-placeholder-background="darkgrey"> -->
-        <div class="post-text">
-          <h2 class="post-title">{{ page.title | safe }}</h2>
-          <span class="post-description">{{ page.description | safe }}</span>
-          <span class="post-date">{{ page.date | date(format="%Y/%m/%d") }}</span>
-        </div>
+      </div>
+      <div class="post-text">
+        <h2 class="post-title">{{ page.title | safe }}</h2>
+        <span class="post-description">{{ page.description | safe }}</span>
+        <span class="post-date">{{ page.date | date(format="%Y/%m/%d") }}</span>
       </div>
     </a>
     {% endfor %}
