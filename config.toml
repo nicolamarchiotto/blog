@@ -38,8 +38,8 @@ highlight_theme = "base16-ocean-dark"
 
 [extra]
 
-avatar = "static/img/avatar.jpg"
-favicon = "static/img/avatar.jpg"
+avatar = "static/img/avatar2.jpg"
+favicon = "static/img/avatar2.jpg"
 
 # Enter your email
 email = "nicola.marchiotto110198@gmail.com"
