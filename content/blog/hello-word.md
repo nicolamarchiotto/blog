@@ -1,9 +1,7 @@
 +++
-title = "Hello word"
+title = "Hello world"
 date = 2021-03-16
-description = """
-Example of blog post
-"""
+description = ""
 [extra]
 header_img = "/static/img/wp3788160.webp"
 +++

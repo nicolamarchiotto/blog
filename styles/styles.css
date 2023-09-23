@@ -56,12 +56,12 @@
     flex-direction: row;
 }
 .post-container {
-  border: 0.1em solid lightgray;
+  border: 0.15em solid #2563eb;
   border-radius: 2%;
 }
 .post-img-container{
-  border-top-left-radius: 2%;
-  border-top-right-radius: 2%;
+  border-top-left-radius: 1%;
+  border-top-right-radius: 1%;
   overflow: hidden;
   position: relative;
 }
