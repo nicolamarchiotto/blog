@@ -56,17 +56,78 @@
     flex-direction: row;
 }
 .post-container {
-  border: 0.15em solid #2563eb;
   border-radius: 2%;
+  overflow: hidden;
+  position: relative;
+  border: 0.1em solid #a2befa;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.post-container:hover{
+  border: 0.1em solid #487ae8;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.div-translate-1{
+  transform: translateY(0);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.post-container:hover .div-translate-1{
+  transform: translateY(-100%);  
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+
+.post-container:hover .div-translate-2{
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 10px;
+   -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease-in 0.2s;
+}
+.div-translate-2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 10px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.2s;
 }
 .post-img-container{
   border-top-left-radius: 1%;
   border-top-right-radius: 1%;
-  overflow: hidden;
-  position: relative;
 }
 .post-text {
-  padding: 2%;
+  /* background-color: #e3e9ff; */
   border-bottom-left-radius: 2%;
   border-bottom-right-radius: 2%;
   width: 100%;
@@ -75,20 +136,7 @@
 }
 .post-img {
   filter: brightness(100%);
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
-.post-img:hover {
-  scale: 110%;
-  border-radius: 2%;
-  filter: brightness(70%);
-  -webkit-filter: brightness(70%);
-}
-
-
 a.stretched {
     display: block;
     text-decoration: none;

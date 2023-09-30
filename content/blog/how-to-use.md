@@ -4,6 +4,7 @@ date = 2022-03-16
 description = "Example of how to use kodama theme."
 [extra]
 header_img = "static/img/pc.jpg"
+tags = ["test1","test2"]
 +++
 
 ## Summary
