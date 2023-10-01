@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./templates/**/*.html", "./theme/**/*.html",  "./themes/"],
+  content: ["templates/**/*.html", "templates/**/macros/*.html"],
   theme: {},
   variants: {},
   plugins: [

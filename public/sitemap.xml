@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://adrien-faure.fr/kodama-theme/</loc>
+        <loc>https://adrien-faure/kodama-theme/</loc>
     </url>
     <url>
-        <loc>https://adrien-faure.fr/kodama-theme/blog/</loc>
+        <loc>https://adrien-faure/kodama-theme/blog/</loc>
     </url>
     <url>
-        <loc>https://adrien-faure.fr/kodama-theme/blog/hello-word/</loc>
+        <loc>https://adrien-faure/kodama-theme/blog/hello-word/</loc>
         <lastmod>2021-03-16</lastmod>
     </url>
     <url>
-        <loc>https://adrien-faure.fr/kodama-theme/blog/how-to-use/</loc>
+        <loc>https://adrien-faure/kodama-theme/blog/how-to-use/</loc>
         <lastmod>2022-03-16</lastmod>
     </url>
     <url>
-        <loc>https://adrien-faure.fr/kodama-theme/contacts/</loc>
+        <loc>https://adrien-faure/kodama-theme/contacts/</loc>
         <lastmod>2020-07-09</lastmod>
     </url>
     <url>
-        <loc>https://adrien-faure.fr/kodama-theme/publications/</loc>
+        <loc>https://adrien-faure/kodama-theme/publications/</loc>
     </url>
     <url>
-        <loc>https://adrien-faure.fr/kodama-theme/publications/conference-vertobraplasty/</loc>
+        <loc>https://adrien-faure/kodama-theme/publications/conference-vertobraplasty/</loc>
         <lastmod>2023-09-18</lastmod>
     </url>
     <url>
-        <loc>https://adrien-faure.fr/kodama-theme/publications/conference-virtual-coaching/</loc>
+        <loc>https://adrien-faure/kodama-theme/publications/conference-virtual-coaching/</loc>
         <lastmod>2022-05-18</lastmod>
     </url>
     <url>
-        <loc>https://adrien-faure.fr/kodama-theme/publications/thesis/</loc>
+        <loc>https://adrien-faure/kodama-theme/publications/thesis/</loc>
         <lastmod>2023-03-02</lastmod>
     </url>
     <url>
-        <loc>https://adrien-faure.fr/kodama-theme/publications/workshop-ceriecon/</loc>
+        <loc>https://adrien-faure/kodama-theme/publications/workshop-ceriecon/</loc>
         <lastmod>2019-03-01</lastmod>
     </url>
 </urlset>

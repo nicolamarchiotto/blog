@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://adrien-faure.fr/kodama-theme/sitemap.xml
+Sitemap: https://adrien-faure/kodama-theme/sitemap.xml

@@ -45,9 +45,9 @@
   {% else -%}
     {% if bibtags.booktitle -%}{{ bibtags.booktitle }}{{ sep }}{% endif -%}
     {% if bibtags.journal -%}{{ bibtags.journal }}{{ sep }}{% endif -%}
-    {% if bibtags.volume -%}{{ trans(key="volume", lang=lang) }} {{ bibtags.volume }}{{ sep }}{% endif -%}
-    {% if bibtags.number -%}{{ trans(key="number", lang=lang) }} {{ bibtags.number }}{{ sep }}{% endif -%}
-    {% if bibtags.pages -%}{{ trans(key="pages", lang=lang) }} {{ bibtags.pages | replace(from="--", to="&ndash;") | safe }}{{ sep }}{% endif -%}
+    {% if bibtags.volume -%} Volume {{ bibtags.volume }}{{ sep }}{% endif -%}
+    {% if bibtags.number -%} Number {{ bibtags.number }}{{ sep }}{% endif -%}
+    {% if bibtags.pages -%} Pages {{ bibtags.pages | replace(from="--", to="&ndash;") | safe }}{{ sep }}{% endif -%}
     {{ page.date | date(format="%B %Y") -}}
     {% if bibtags.doi -%}{{ sep -}}
       {% if links_allowed-%}<a href="https://doi.org/{{bibtags.doi}}" target="_blank">{%endif-%}

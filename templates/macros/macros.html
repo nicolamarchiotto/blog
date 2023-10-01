@@ -8,7 +8,7 @@
 {% macro toc() -%}
 {% if page.toc and page.extra.toc -%}
 <div class="bg-gray-50 px-4 pb-1">
-<h2>{{trans(key="toc", lang=lang)}}</h2>
+<h2>Table of Contents</h2>
 <ul>
   {% for h1 in page.toc -%}
       <li>

@@ -1,8 +1,8 @@
 # The URL the site will be built for
-base_url = "https://adrien-faure.fr/kodama-theme"
+base_url = "https://adrien-faure/kodama-theme"
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = false
+compile_sass = true
 
 title = "Nicola Marchiotto"
 
@@ -11,8 +11,12 @@ version = "1.0.1"
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+# The default language; used in feeds.
+default_language = "en"
+
 [translations]
-Biography = "About Me"
+Biography = "Biography"
+AboutMe = "About Me"
 Interests = "Interests"
 Experience = "Experience"
 Education = "Education"
@@ -22,6 +26,7 @@ Abstract = "Abstract"
 volume = "volume"
 number = "number"
 pages = "pages"
+
 
 # Various slugification strategies, see below for details
 # Defaults to everything being a slug
@@ -53,24 +58,5 @@ menu_items = [
    { path = "/", name = "About Me" },
 ]
 
-# Translation related extra
-#language_codes = [ "en", "fr" ]
-
-#[extra.fr]
-#contact_in_index = false
-#menu_items = [
-#  # { path = "#contacts_fr", name = "Contact" },
-#]
-
-# Your translations
-#[languages.fr]
-#title = "Kodama"
-
-#[languages.fr.translations]
-#Biography = "Bio"
-#Interests = "Interêts"
-#Education = "Formation"
-#Published = "Publication"
-#Abstract = "Résumé"
 
 
