@@ -29,7 +29,6 @@
   padding-right: 1.8rem;
 }
 .colored-box {
-  background-color: #2563eb; 
   border-radius: 6px; 
   padding-top: 1px;
   padding-bottom: 3px;
@@ -42,10 +41,6 @@
   font-size: small;
   font-weight: bold;
   margin-top: 6px;
-}
-.text-myblue {
-  --tw-text-opacity: 1;
-  color: #2563eb;
 }
 .posts {
     display: flex;

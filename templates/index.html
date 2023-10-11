@@ -16,29 +16,64 @@
         {% for icon in section.extra.avatar_icons %}
         <div class="basis p-3 ">
           <a href="{{icon.link}}" target="_blank"><i>{{ icons::factory(icon=icon.icon,classes="inline h-12 w-12
-              flex-no-shrink stroke-blue-600 hover:stroke-blue-800 visited:stroke-purple-600 fill-blue-600
-              visited:fill-purple-600 hover:fill-blue-800 ") }}</i></a>
+              flex-no-shrink stroke-blue-600 hover:stroke-blue-700 visited:stroke-purple-600 fill-blue-600
+              visited:fill-purple-600 hover:fill-blue-700 ") }}</i></a>
         </div>
         {% endfor %}
       </div>
 
-      <div>
-        <h2 class="text-center text-md font-medium text-gray-900 ">Contact me at</h2>
-        <h2 class="text-center text-md font-bold text-gray-900">{{ config.extra.email }}</h2>
+      <div class="flex justify-center flex-col">
+        <h2 class="text-center text-md font-medium text-gray-900">Contact me at</h2>
+        <a href="mailto:{{config.extra.email}}" class="text-center flex justify-center  underline text-md font-bold text-gray-900">{{ config.extra.email }}</a>
       </div>
-      <div class="py-10 text-center ">
-        <h1 class="text-center text-md font-medium text-gray-900">Get my CV&nbsp</h1>
-        <div class="flex flex-row justify-center">
-          <a class="underline font-bold text-myblue" href="/cv/CV_eng.pdf" target="_blank"
-            download="Marchiotto_CV_Eng.pdf">
-            ENG
-          </a>
-          &nbsp&nbsp&nbsp
-          <a class="underline font-bold text-myblue" href="/cv/CV_ita.pdf" target="_blank"
-            download="Marchiotto_CV_ITA.pdf">
-            ITA
-          </a>
+      <div class="py-8 text-center ">
+
+        <div class="group inline-block">
+          <button
+            class="outline-none text-white bg-blue-600 hover:bg-blue-700 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+            <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+            </svg>
+            <span>Get my CV</span>
+          </button>
+          <ul
+            class="bg-white border rounded-lg transform scale-0 group-hover:scale-100 group-hover:translate-x-[136px] group-hover:-translate-y-[4px] xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 absolute transition duration-150 ease-in-out origin-top w-32 mt-0.5">
+            <li class="rounded-sm px-3 py-1 hover:bg-gray-100 font-bold text-blue-600">
+              <a href="/cv/CV_eng.pdf" target="_blank" download="Marchiotto_CV_Eng.pdf">
+                Eng
+              </a>
+            </li>
+            <li class="rounded-sm px-3 py-1 hover:bg-gray-100 font-bold text-blue-600">
+              <a href="/cv/CV_ita.pdf" target="_blank" download="Marchiotto_CV_ITA.pdf">
+                Ita
+              </a>
+            </li>
+          </ul>
         </div>
+        <!-- <style>
+        
+          /* Below styles fake what can be achieved with the tailwind config
+           you need to add the group-hover variant to scale and define your custom
+           min width style.
+           See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+           for implementation with config file
+        */
+          .group:hover .group-hover\:scale-100 {
+            transform: scale(1)
+          }
+
+          .group:hover .group-hover\:-rotate-180 {
+            transform: rotate(180deg)
+          }
+
+          .scale-0 {
+            transform: scale(0)
+          }
+
+          .min-w-32 {
+            min-width: 8rem
+          }
+        </style> -->
       </div>
     </div>
   </div>
@@ -72,7 +107,7 @@
               </div>
               <div class="flex flex-row flex-wrap">
                 {% for skill in work.skills %}
-                <div class="colored-box">
+                <div class="colored-box bg-blue-600">
                   <p>{{skill}}</p>
                 </div>
                 {% endfor %}
@@ -109,6 +144,9 @@
       </ul>
     </div>
   </div>
+
+
+
   {% endblock biography %}
 
   {% endblock content-%}

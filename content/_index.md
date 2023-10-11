@@ -69,6 +69,9 @@ interests = [
 [[extra.avatar_icons]]
   icon = "linkedin"
   link = "https://www.linkedin.com/in/nicola-marchiotto-3bb3a3171/"
+[[extra.avatar_icons]]
+  icon = "mail"
+  link = "mailto:nicola.marchiotto110198@gmail.com"
 +++
 
 Hi, I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to easily present mysellf to the world and to keep track of the noteworthy home projects I embrace.

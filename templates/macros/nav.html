@@ -43,7 +43,7 @@
         {% if not ssection_data.extra.hidden_nav -%}
         <li class="text-lg">
           <a href="{{ get_url(path=ssection_data.path, trailing_slash=false) }}" class={%if current_path and
-            current_path is starting_with(ssection_data.path) %}"inline-block py-2 px-4 text-[#2563eb] font-bold
+            current_path is starting_with(ssection_data.path) %}"inline-block py-2 px-4 text-blue-600 font-bold
             no-underline"{% else %}"inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline
             py-2 px-4"{%endif%}>
             {{ssection_data.title}}
