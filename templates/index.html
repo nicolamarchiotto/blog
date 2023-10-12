@@ -37,7 +37,7 @@
             <span>Get my CV</span>
           </button>
           <ul
-            class="bg-white border rounded-lg transform scale-0 group-hover:scale-100 group-hover:translate-x-[136px] group-hover:-translate-y-[4px] xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 absolute transition duration-150 ease-in-out origin-top w-32 mt-0.5">
+            class="bg-white border rounded-lg transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top w-32 mt-0.5">
             <li class="rounded-sm px-3 py-1 hover:bg-gray-100 font-bold text-blue-600">
               <a href="/cv/CV_eng.pdf" target="_blank" download="Marchiotto_CV_Eng.pdf">
                 Eng
@@ -50,35 +50,11 @@
             </li>
           </ul>
         </div>
-        <!-- <style>
-        
-          /* Below styles fake what can be achieved with the tailwind config
-           you need to add the group-hover variant to scale and define your custom
-           min width style.
-           See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
-           for implementation with config file
-        */
-          .group:hover .group-hover\:scale-100 {
-            transform: scale(1)
-          }
-
-          .group:hover .group-hover\:-rotate-180 {
-            transform: rotate(180deg)
-          }
-
-          .scale-0 {
-            transform: scale(0)
-          }
-
-          .min-w-32 {
-            min-width: 8rem
-          }
-        </style> -->
       </div>
     </div>
   </div>
 
-  <div class="w-full col-span-3">
+  <div class="w-full col-span-3 xl:mt-0 mt-10">
     <h1 class="font-bold font-sans break-normal text-gray-900 text-3xl pb-4">About Me</h1>
     <p class="prose prose-indigo mx-6">
       {{ section.content | safe }}
