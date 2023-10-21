@@ -3,30 +3,30 @@
 {% block content %}
 <div class="container max-w-8xl mx-auto">
 
-  <div class="font-sans pb-8">
-    <h1 class="font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-4xl">{{section.title}}</h1>
+  <div class="font-sans">
+    <h1 class="font-bold font-sans break-normal text-gray-900 text-3xl md:text-4xl">{{section.title}}</h1>
   </div>
 
-  <div class="grid lg:grid-cols-6 sm:grid-cols-3 grid-cols-2 md:gap-6 gap-4 ">
+  <!-- <div class="grid lg:grid-cols-6 sm:grid-cols-3 grid-cols-2 md:gap-6 gap-4 "> -->
+  <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
     {% for page in section.pages %}
-    <!-- bg-gradient-to-t from-cyan-50 from-0% via-white via-10% to-white to-100% -->
-    <a class="post-container w-full flex flex-col shadow-lg hover:shadow-xl"
-      href="{{config.base_url}}/{{page.path}}">
-      <div class="div-translate-1 flex flex-col w-full">
-        <div class="post-img-container justify-center text-center">
-          {% set image = resize_image(path=page.extra.header_img, format="webp", width=1080, height=1080, op="scale") %}
-          <img class="post-img" src="{{image.url}}" alt="Profile image" />
-        </div>
-        <div class="post-text font-sans flex flex-col justify-between py-4">
-          <h1 class="post-title text-lg font-bold px-2">{{ page.title | safe }}</h1>
-        </div>
-      </div>
-      <div class="div-translate-2 flex flex-col justify-between w-full">
-        <!-- <h1 class="post-date text-md text-black mx-auto">{{ page.date | date(format="%Y/%m/%d") }}</h1> -->
-        <div class="flex grow px-2 py-2 overflow-hidden">
+
+    <a href="{{config.base_url}}/{{page.path}}"
+      class="lg:flex bg-white overflow-hidden shadow-lg rounded-lg hover:shadow-xl">
+
+      {% set image = resize_image(path=page.extra.header_img, format="webp", width=1080, height=1080, op="scale") %}
+
+      <img
+        class="object-cover w-full h-56 rounded-lg lg:w-64 animate-fade-in block scale-100 transform object-center opacity-100 transition duration-300 xl:hover:scale-110"
+        src="{{image.url}}" alt="">
+
+      <div class="flex flex-col space-y-6 lg:space-y-0 justify-between py-6 mx-6">
+        <p class="text-xl font-semibold text-gray-800 hover:underline">
           {{ page.description | safe }}
-        </div>
-        <div class="flex flex-row flex-wrap justify-center">
+        </p>
+
+        <span class="text-sm text-gray-500">Published on: {{ page.date | date(format="%Y/%m/%d") }}</span>
+        <div class="flex flex-row flex-wrap">
           {% for tag in page.extra.tags %}
           <div class="colored-box">
             <p>{{tag}}</p>
