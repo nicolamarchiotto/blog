@@ -4,8 +4,8 @@
 
 {% block biography %}
 <!-- flex xl:flex-row flex-col flex-wrap xl:flex-nowrap justify-end xl:justify-end items-center  -->
-<div class="max-w-8xl mx-auto container grid grid-cols-1 2xl:grid-cols-4 mb-4 space-y-10 2xl:space-y-0">
-  <div class="py-4 px-4 2xl:mx-4 bg-white shadow-lg rounded-lg hover:shadow-xl ">
+<div class="max-w-8xl mx-auto container grid grid-cols-1 2xl:grid-cols-4 py-4 px-4 bg-white pt-28 xs:pt-24 sm:pt-[80px] shadow-lg">
+  <div class="py-4 px-4 2xl:mx-4  ">
     {% set image = resize_image(path=config.extra.avatar, format="webp", width=208, height=208) %}
     <img class="object-center w-52 h-52 rounded-full mx-auto" src="{{image.url}}" alt="Profile image" />
     <h1 class="text-center font-bold text-gray-900 text-3xl py-4">{{ config.title }}</h1>
@@ -23,7 +23,7 @@
     <div class="flex justify-center flex-col">
       <h2 class="text-center text-md font-medium text-gray-900">Contact me at</h2>
       <a href="mailto:{{config.extra.email}}"
-        class="text-center flex justify-center  underline text-md font-bold text-gray-900">{{ config.extra.email
+        class="text-center flex justify-center underline text-md font-bold text-blue-600 hover:text-purple-600">{{ config.extra.email
         }}</a>
     </div>
     <div class="grid grid-cols-3 py-6 justify-items-center">
@@ -37,7 +37,7 @@
           <span class="flex-nowrap">My CV</span>
         </button>
         <ul
-          class="bg-white border rounded-lg transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top w-28 mt-0.5">
+          class="bg-white border shadow-lg rounded-lg transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top w-28 mt-0.5">
           <li class="rounded-sm px-3 py-1 hover:bg-gray-100 font-bold text-blue-600">
             <a href="/cv/CV_eng.pdf" target="_blank" download="Marchiotto_CV_Eng.pdf">
               Eng
@@ -53,8 +53,12 @@
       <div class="flex pl-8 py-2 visible xl:invisible justify-end ">
         <button onclick="document.getElementById('getmycv').scrollIntoView();"
           class="p-0 w-11 h-11 bg-blue-600 rounded-full hover:bg-blue-700 active:shadow-lg mouse shadow transition ease-in duration-200 noSelect animate-bounce">
-          <svg viewBox="0 0 24 24" class="w-8 h-8 inline-block ">
+          <!-- <svg viewBox="0 0 24 24" class="w-8 h-8 inline-block ">
+            
             <path fill="#FFFFFF" d="M24 12l-11-8v6h-13v4h13v6z" transform="rotate(90, 12, 12)" />
+          </svg> -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M19 12a1 1 0 0 1-1 1H8.414l1.293 1.293a1 1 0 0 1-1.414 1.414l-3-3a1 1 0 0 1 0-1.414l3-3a1 1 0 0 1 1.414 1.414L8.414 11H18a1 1 0 0 1 1 1z"  fill="#FFFFFF"  transform="rotate(-90, 12, 12)" data-name="Down"/>
           </svg>
         </button>
       </div>
@@ -62,9 +66,9 @@
     </div>
   </div>
 
-  <div id="middle" class="w-full col-span-3 xl:mt-0 mt-10 flex flex-col space-y-10">
+  <div id="middle" class="w-full col-span-3 xl:mt-0 mt-10 flex flex-col space-y-2">
     <!-- ABOUT ME -->
-    <div class="py-4 px-4 bg-white shadow-lg rounded-lg hover:shadow-xl">
+    <div class="py-4 px-4 ">
       <h1 class="font-bold font-sans break-normal text-gray-900 text-3xl pb-4">About Me</h1>
       <p class="prose prose-indigo mx-6">
         {{ section.content | safe }}
@@ -72,7 +76,7 @@
     </div>
 
     <!-- EXPERIENCE -->
-    <div class="basis-full py-4 px-4 bg-white shadow-lg rounded-lg hover:shadow-xl">
+    <div class="basis-full py-4 px-4 ">
       <h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-2">Experience
       </h2>
       <ul class="py-1">
@@ -107,7 +111,7 @@
     </div>
 
     <!-- EDUCATION -->
-    <div class="basis-full py-4 px-4 bg-white shadow-lg rounded-lg hover:shadow-xl">
+    <div class="basis-full py-4 px-4 ">
       <h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-2">Education
       </h2>
       <ul class="">
