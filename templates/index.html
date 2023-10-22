@@ -4,8 +4,8 @@
 
 {% block biography %}
 <!-- flex xl:flex-row flex-col flex-wrap xl:flex-nowrap justify-end xl:justify-end items-center  -->
-<div class="max-w-8xl mx-auto container grid grid-cols-1 2xl:grid-cols-4 py-4 px-4 bg-white pt-28 xs:pt-24 sm:pt-[80px] shadow-lg">
-  <div class="py-4 px-4 2xl:mx-4  ">
+<div class="max-w-8xl mx-auto container grid grid-cols-1 xl:grid-cols-4 py-4 px-4 bg-white pt-28 xs:pt-24 sm:pt-[80px] shadow-lg">
+  <div class="py-4 px-4 xl:mx-4  ">
     {% set image = resize_image(path=config.extra.avatar, format="webp", width=208, height=208) %}
     <img class="object-center w-52 h-52 rounded-full mx-auto" src="{{image.url}}" alt="Profile image" />
     <h1 class="text-center font-bold text-gray-900 text-3xl py-4">{{ config.title }}</h1>
