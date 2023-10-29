@@ -74,7 +74,7 @@
 {% if show_frame -%}
 <div class="py-4 px-8 bg-white shadow-lg rounded-lg hover:shadow-xl">
 {% endif -%}
-  <a href="{{ page.permalink | safe }}">
+  <a href="{{ page.permalink | safe }}" class="space-y-1">
     <p class="text-sm text-slate-400">{{publication::authors(page=page, bibtags=bibdata, links_allowed=false)}}</p>
     <h2 class="text-xl font-bold text-blue-600 hover:text-blue-800 visited:text-purple-600">{{publication::title(page=page, bibtags=bibdata)}}</h2>
     <p class="text-sm text-slate-400">{{publication::details(page=page, bibtags=bibdata, links_allowed=false)}}</p>

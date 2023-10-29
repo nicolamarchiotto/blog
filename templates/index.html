@@ -4,7 +4,7 @@
 
 {% block biography %}
 <!-- flex xl:flex-row flex-col flex-wrap xl:flex-nowrap justify-end xl:justify-end items-center  -->
-<div class="max-w-8xl mx-auto container grid grid-cols-1 xl:grid-cols-4 py-4 px-4 bg-white pt-28 xs:pt-24 sm:pt-[80px] shadow-lg">
+<div class="max-w-8xl mx-auto container grid grid-cols-1 xl:grid-cols-4 py-4 px-4 bg-white shadow-lg">
   <div class="py-4 px-4 xl:mx-4  ">
     {% set image = resize_image(path=config.extra.avatar, format="webp", width=208, height=208) %}
     <img class="object-center w-52 h-52 rounded-full mx-auto" src="{{image.url}}" alt="Profile image" />
@@ -51,12 +51,8 @@
         </ul>
       </div>
       <div class="flex pl-8 py-2 visible xl:invisible justify-end ">
-        <button onclick="document.getElementById('getmycv').scrollIntoView();"
-          class="p-0 w-11 h-11 bg-blue-600 rounded-full hover:bg-blue-700 active:shadow-lg mouse shadow transition ease-in duration-200 noSelect animate-bounce">
-          <!-- <svg viewBox="0 0 24 24" class="w-8 h-8 inline-block ">
-            
-            <path fill="#FFFFFF" d="M24 12l-11-8v6h-13v4h13v6z" transform="rotate(90, 12, 12)" />
-          </svg> -->
+        <button
+          class="p-0 w-11 h-11 bg-blue-600 rounded-full mouse shadow transition ease-in duration-200 noSelect animate-bounce">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M19 12a1 1 0 0 1-1 1H8.414l1.293 1.293a1 1 0 0 1-1.414 1.414l-3-3a1 1 0 0 1 0-1.414l3-3a1 1 0 0 1 1.414 1.414L8.414 11H18a1 1 0 0 1 1 1z"  fill="#FFFFFF"  transform="rotate(-90, 12, 12)" data-name="Down"/>
           </svg>

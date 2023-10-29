@@ -7,11 +7,6 @@ path = "home"
 [extra]
 title = ""
 
-interests = [
-  "Rainbow pony",
-  "Martian food",
-  "Quantic science"
-]
 [[extra.experience.works]]
   company = "Exor International"
   position = "Software Engineer"

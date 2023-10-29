@@ -24,33 +24,29 @@
   <title>{% if section -%}{{ section.title }} | {% endif %} {{ config.title }}</title>
 
   {% block head -%}
-    {% block css -%}
-      {{ macros_head::stylesheet() }}
-    {% endblock css -%}
+  {% block css -%}
+  {{ macros_head::stylesheet() }}
+  {% endblock css -%}
 
-    {% block title -%}
-      {% set section = load_data(path=current_path ~ "_index.md", metadata_only=true, required = false)  -%}
-    {% endblock title -%}
+  {% block title -%}
+  {% set section = load_data(path=current_path ~ "_index.md", metadata_only=true, required = false) -%}
+  {% endblock title -%}
   {% endblock head -%}
 </head>
 
-<body class="bg-gray-50 w-screen overflow-x-hidden">
+<body class="bg-gray-50 w-screen overflow-hidden h-screen">
   <!-- Top nav bar -->
-  {% block nav -%}
-    {{ macros_nav::nav(website_title=config.title) }}
-  {% endblock nav -%}
-  <!-- Container -->
-  <!-- mt-32 xs:mt-24 sm:mt-[80px]  -->
-  <div class="z-10 px-4" >
-  {% block content -%}
-  {% endblock content -%}
+  <div class="h-[12%] sm:h-[5%] min-h-[12%] sm:min-h-[5%]">
+    {% block nav -%}
+      {{ macros_nav::nav(website_title=config.title) }}
+    {% endblock nav -%}
   </div>
-  <!-- <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-  <script>addBackToTop({
-      diameter: 56,
-      backgroundColor: 'rgb(37,99,235)',
-      textColor: '#fff'
-    })</script> -->
+
+  <!-- Container -->
+  <div class="px-4 overflow-y-scroll h-[80%] sm:h-[95%] min-h-[80%] sm:min-h-[95%] ">
+    {% block content -%}
+    {% endblock content -%}
+  </div>
 
   {% block footer -%}
   <!-- <footer class="bg-white">
