@@ -74,5 +74,3 @@ Hi, I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I
 
 <br>
 Computer Science is my passsion, and when I don't practice it as work, I am usually behind the pc working on something IT related. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.
-
-<br><br>

@@ -7,6 +7,7 @@
 
 <!DOCTYPE html>
 <html lang="{{ lang | default(value=config.default_language)}}" class="scroll-smooth">
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
 
 <head>
   <!-- {% set favicon = resize_image(path=config.extra.favicon, format="png", width=32, height=32) %}
@@ -32,22 +33,97 @@
   {% set section = load_data(path=current_path ~ "_index.md", metadata_only=true, required = false) -%}
   {% endblock title -%}
   {% endblock head -%}
+
 </head>
 
 <body class="bg-gray-50 w-screen overflow-hidden h-screen">
   <!-- Top nav bar -->
-  <div class="h-[12%] sm:h-[5%] min-h-[12%] sm:min-h-[5%]">
+  <div class="hidden xl:flex h-[5%] bg-red-500 mb-[0.5%] content-center ">
     {% block nav -%}
-      {{ macros_nav::nav(website_title=config.title) }}
+    {{ macros_nav::nav(website_title=config.title) }}
     {% endblock nav -%}
   </div>
 
   <!-- Container -->
-  <div class="px-4 overflow-y-scroll h-[80%] sm:h-[95%] min-h-[80%] sm:min-h-[95%] ">
+  <div class="px-4 overflow-y-scroll h-full xl:h-[94.5%] ">
     {% block content -%}
     {% endblock content -%}
-  </div>
 
+  </div>
+  <div class="xl:hidden group fixed bottom-0 right-0 m-2 flex items-end justify-end">
+    <!-- main -->
+    <div>
+      <button class="relative group">
+        <!-- ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 -->
+        <div
+          class="relative flex overflow-hidden items-center justify-center rounded-full w-11 h-11 transform transition-all bg-blue-600 hover:bg-blue-700 duration-[0.2s] shadow-lg ring-0 ring-blue-600 hover:ring-1 group-focus:ring-1 ring-opacity-30">
+          <div
+            class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-[0.2s] origin-center overflow-hidden ">
+            <div
+              class="bg-white h-[2.5px] w-7 transform transition-all duration-[0.2s] origin-left group-focus:-translate-x-10">
+            </div>
+            <div
+              class="bg-white h-[2.5px] w-7 rounded transform transition-all duration-[0.2s] group-focus:translate-x-10 delay-75">
+            </div>
+            <div
+              class="bg-white h-[2.5px] w-7 transform transition-all duration-[0.2s] origin-left group-focus:translate-x-10 delay-150">
+            </div>
+
+            <div
+              class="absolute items-center justify-between transform transition-all duration-[0.2s] top-2.5 translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
+              <div
+                class="absolute bg-white h-[2.5px] w-5 transform transition-all duration-[0.2s] rotate-0 delay-300 group-focus:rotate-45">
+              </div>
+              <div
+                class="absolute bg-white h-[2.5px] w-5 transform transition-all duration-[0.2s] -rotate-0 delay-300 group-focus:-rotate-45">
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+    </div>
+    <!-- sub left -->
+    <div
+      class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16 flex p-2 scale-100 bg-blue-600 hover:bg-blue-700 text-white ">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 10.5h.375c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H21M3.75 18h15A2.25 2.25 0 0021 15.75v-6a2.25 2.25 0 00-2.25-2.25h-15A2.25 2.25 0 001.5 9.75v6A2.25 2.25 0 003.75 18z" />
+        </svg> -->
+      <a href="{{config.base_url}}/publications">
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6 shadow-lg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+        </svg>
+      </a>
+
+    </div>
+    <!-- sub top -->
+    <div
+      class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16  flex p-2 bg-blue-600 hover:bg-blue-700  text-white">
+
+      <a href="{{config.base_url}}">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6 shadow-lg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+        </svg>
+      </a>
+
+    </div>
+    <!-- sub middle -->
+    <div
+      class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-14 group-hover:-translate-x-14 flex p-2 bg-blue-600 hover:bg-blue-700 text-white">
+      <a href="{{config.base_url}}/blog">
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6 shadow-lg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z" />
+        </svg>
+      </a>
+    </div>
+  </div>
   {% block footer -%}
   <!-- <footer class="bg-white">
     <div class="bg-white text-gray-400 container max-w-6xl mx-auto py-2 text-center">
@@ -55,6 +131,11 @@
     </div>
   </footer> -->
   {% endblock footer -%}
+
+  <script>
+    w3IncludeHTML();
+  </script>
+
 </body>
 
 </html>
