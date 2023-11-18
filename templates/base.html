@@ -36,8 +36,9 @@
 
 </head>
 
-<body class="bg-gray-50 w-screen overflow-hidden h-screen">
+<body class="bg-gray-50 w-screen overflow-hidden h-screen ">
   <!-- Top nav bar -->
+  
   <div class="hidden xl:flex h-[5%] ">
     {% block nav -%}
     {{ macros_nav::nav(website_title=config.title) }}
@@ -45,7 +46,8 @@
   </div>
 
   <!-- Container -->
-  <div class="px-4 overflow-y-scroll h-[95%]">
+  <!-- style="height: 95%; padding-left: 4px; padding-right: 4px; overflow-y: scroll; scrollbar-width: thin;" -->
+  <div class="px-4 overflow-y-scroll h-[95%]" >
     {% block content -%}
     {% endblock content -%}
 

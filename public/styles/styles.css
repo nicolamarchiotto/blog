@@ -1898,6 +1898,40 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+/* Styling the scrollbar in Chrome */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+/* Styling the scrollbar in Firefox */
+
+::-moz-scrollbar {
+  width: 8px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+/* Styling the scrollbar in Safari */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
 #header {
   background-color: white;
 }
