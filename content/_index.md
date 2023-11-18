@@ -70,7 +70,7 @@ title = ""
   icon = "mail"
   link = "mailto:nicola.marchiotto110198@gmail.com" -->
 
-Hi, I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to easily present mysellf to the world and to keep track of the noteworthy home projects I embrace.
+Hi, I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to share my portfolio and to keep track of my hobbies.
 
 <br>
-Computer Science is my passsion, and when I don't practice it as work, I am usually behind the pc working on something IT related. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.
+Computer Science is what I am good at and it is part of my daily routine. Electronics and Mechanics are my weak points, but on which I am plannig to get better at with my home projects. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.

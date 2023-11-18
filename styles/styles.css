@@ -29,19 +29,21 @@
 @layer utilities {
     @variants responsive {
       /* Hide scrollbar for Chrome, Safari and Opera */
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
+      .page-padding::-webkit-scrollbar {
+        padding-top: 64px;
+        padding-bottom: 64px;        
       }
 
       /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
+      .page-padding {
+        padding-top: 16px;
+        padding-bottom: 96px;        
       }
+      
     }
   }
 
-  #header {
+#header {
   background-color: white;
 }
 .zola-anchor {
