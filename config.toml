@@ -53,9 +53,33 @@ contact_in_index = true
 # Additional menu items
 # `Name` is what it is displayed, `path` is the url
 menu_items = [
-   
+
    { path = "/", name = "About Me" },
 ]
 
 
 
+# Translation related extra
+language_codes = [ "en", "it" ]
+
+[extra.it]
+menu_items = [
+  # { path = "/", name = "Portofolio" },
+]
+
+# Your translations
+[languages.it]
+title = "Nicola Marchiotto"
+
+[languages.it.translations]
+Biography = "Biografia"
+AboutMe = "Su di me"
+Interests = "Interessi"
+Experience = "Esperienze"
+Education = "Formazione"
+toc = "Indice"
+Published = "Pubblicato"
+Abstract = "Abstract"
+volume = "volume"
+number = "numero"
+pages = "pagine"
