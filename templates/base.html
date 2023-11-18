@@ -38,23 +38,22 @@
 
 <body class="bg-gray-50 w-screen overflow-hidden h-screen">
   <!-- Top nav bar -->
-  <div class="hidden xl:flex h-[5%] bg-red-500 mb-[0.5%] content-center ">
+  <div class="hidden xl:flex h-[5%] ">
     {% block nav -%}
     {{ macros_nav::nav(website_title=config.title) }}
     {% endblock nav -%}
   </div>
 
   <!-- Container -->
-  <div class="px-4 overflow-y-scroll h-full xl:h-[94.5%] ">
+  <div class="px-4 overflow-y-scroll h-[95%]">
     {% block content -%}
     {% endblock content -%}
 
   </div>
+  <!-- FAB  -->
   <div class="xl:hidden group fixed bottom-0 right-0 m-2 flex items-end justify-end">
-    <!-- main -->
     <div>
       <button class="relative group">
-        <!-- ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 -->
         <div
           class="relative flex overflow-hidden items-center justify-center rounded-full w-11 h-11 transform transition-all bg-blue-600 hover:bg-blue-700 duration-[0.2s] shadow-lg ring-0 ring-blue-600 hover:ring-1 group-focus:ring-1 ring-opacity-30">
           <div
