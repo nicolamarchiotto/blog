@@ -53,7 +53,6 @@ contact_in_index = true
 # Additional menu items
 # `Name` is what it is displayed, `path` is the url
 menu_items = [
-
    { path = "/", name = "About Me" },
 ]
 
@@ -64,7 +63,7 @@ language_codes = [ "en", "it" ]
 
 [extra.it]
 menu_items = [
-  # { path = "/", name = "Portofolio" },
+   { path = "/it/", name = "Portofolio" },
 ]
 
 # Your translations

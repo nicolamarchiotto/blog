@@ -28,7 +28,7 @@
         {% for item in menu_items -%}
         <li class="text-lg">
           <a href={{ get_url(path=item.path, trailing_slash=false, lang=lang) }} class={%if current_path and
-            current_path=="/" %}"inline-block py-2 px-4 text-[#2563eb] font-bold no-underline"{% else %}"inline-block
+            current_path in ['/','/it/'] %}"inline-block py-2 px-4 text-[#2563eb] font-bold no-underline"{% else %}"inline-block
             text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"{%endif%}>
             {{item.name}}
           </a>
