@@ -23,7 +23,7 @@
       </div>
 
       <div class="flex justify-center flex-col">
-        <h2 class="text-center text-md font-medium text-gray-900">Contact me at</h2>
+        <h2 class="text-center text-md font-medium text-gray-900">{{trans(key="ContactMe", lang=lang)}}</h2>
         <a href="mailto:{{config.extra.email}}"
           class="text-center flex justify-center underline text-md font-bold text-blue-600 hover:text-purple-600 break-all">{{
           config.extra.email}}
@@ -33,14 +33,14 @@
       <div class="pt-6 justify-center text-center">
         <div class="group inline-block self-center">
           <button
-            class="outline-none text-white bg-blue-600 hover:bg-blue-700 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 w-28 text-center inline-flex items-center shadow-lg">
+            class="outline-none text-white bg-blue-600 hover:bg-blue-700 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 w-20 text-center inline-flex items-center shadow-lg">
             <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
               <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
             </svg>
-            <span class="flex-nowrap">My CV</span>
+            <span class="flex-nowrap font-bold">CV</span>
           </button>
           <ul
-            class="bg-white border shadow-lg rounded-lg transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top w-28 mt-0.5">
+            class="bg-white border shadow-lg rounded-lg transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top w-20 mt-0.5">
             <li class="rounded-sm hover:bg-gray-100 font-bold text-blue-600">
               <a href="/cv/CV_eng.pdf" target="_blank" download="Marchiotto_CV_Eng.pdf">
                 <p class="w-full h-full py-1">Eng</p>
@@ -60,15 +60,14 @@
   <div id="middle" class="w-full col-span-3 xl:mt-0 flex flex-col space-y-2">
     <!-- ABOUT ME -->
     <div class="py-4 px-4 ">
-      <h1 class="font-bold font-sans break-normal text-gray-900 text-3xl mb-4">About Me</h1>
+      <h1 class="font-bold font-sans break-normal text-gray-900 text-3xl mb-4">{{trans(key="AboutMe", lang=lang)}}</h1>
       <p class="mx-6">
         {{ section.content | safe }}
       </p>
     </div>
     <!-- EXPERIENCE -->
     <div class="basis-full py-4 px-4 ">
-      <h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-2">Experience
-      </h2>
+      <h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-2">{{trans(key="Experience", lang=lang)}}</h2>
       <ul class="py-1">
         {% for work in section.extra.experience.works %}
         <li class="py-2">
@@ -102,7 +101,7 @@
 
     <!-- EDUCATION -->
     <div class="basis-full py-4 px-4 ">
-      <h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-2">Education
+      <h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-2">{{trans(key="Education", lang=lang)}}
       </h2>
       <ul class="">
         {% for course in section.extra.education.courses %}

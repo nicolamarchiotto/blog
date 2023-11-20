@@ -1,6 +1,6 @@
 +++
 date = 2020-07-09
-title = "Publications"
+title = "Pubblicazioni"
 sort_by = "date"
 template = "publications.html"
 page_template = "publication-page.html"

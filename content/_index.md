@@ -11,7 +11,7 @@ title = ""
   company = "Exor International"
   position = "Software Engineer"
   year = "2023-present"
-  description = "Software development for the automation industry and of machines for internal quality assurance"
+  description = "Software development for the automation industry. Development of solutions aimed to improve the quality assurance performances of the company production lines."
   skills = ["ML Vision Based QA", "Docker", "CoDeSys", " OPC UA", "JMobile", "C++", "Qt"]
 
 [[extra.experience.works]]
@@ -66,11 +66,7 @@ title = ""
   link = "https://www.linkedin.com/in/nicola-marchiotto-3bb3a3171/"
 +++
 
-<!-- [[extra.avatar_icons]]
-  icon = "mail"
-  link = "mailto:nicola.marchiotto110198@gmail.com" -->
-
-Hi, I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to share my portfolio and to keep track of my hobbies.
+I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to easily share my portfolio and to keep track of my hobbies.
 
 <br>
 Computer Science is what I am good at and it is part of my daily routine. Electronics and Mechanics are my weak points, but on which I am plannig to get better at with my home projects. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.

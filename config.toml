@@ -16,6 +16,7 @@ default_language = "en"
 
 [translations]
 Biography = "Biography"
+ContactMe = "Contact Me"
 AboutMe = "About Me"
 Interests = "Interests"
 Experience = "Experience"
@@ -63,7 +64,7 @@ language_codes = [ "en", "it" ]
 
 [extra.it]
 menu_items = [
-   { path = "/it/", name = "Portofolio" },
+   { path = "/it/", name = "Su di me" },
 ]
 
 # Your translations
@@ -72,6 +73,7 @@ title = "Nicola Marchiotto"
 
 [languages.it.translations]
 Biography = "Biografia"
+ContactMe = "Contattami"
 AboutMe = "Su di me"
 Interests = "Interessi"
 Experience = "Esperienze"

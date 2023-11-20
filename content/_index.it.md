@@ -11,45 +11,45 @@ title = ""
   company = "Exor International"
   position = "Software Engineer"
   year = "2023-presente"
-  description = "Software development for the automation industry and of machines for internal quality assurance"
+  description = "Sviluppo software per l'industria dell'automazione. Sviluppo di tecnologie per migliorare il controllo qualità nelle linee di produzione dell'azienda. Sviluppo software per macchinari interni."
   skills = ["ML Vision Based QA", "Docker", "CoDeSys", " OPC UA", "JMobile", "C++", "Qt"]
 
 [[extra.experience.works]]
   company = "Altair Robotics Lab"
-  position = "Research Fellow"
+  position = "Ricercatore Borsista"
   year = "2022–2023"
-  description = "Refinement of a prototype for robot assisted vertebroplasty. Implementation of the software for performing robot registration, planning the surgery and controlling the hardware"
+  description = "Perfezionamento di un prototipo per un intervento di vertebroplastica assistito da robot. Realizzazione del software per la registraione del robot, pianificazione dell’ intervento e controllo dell’hardware."
   skills = ["Medical Image Analysis", "Robot-Image Registration", "Robot Control", "Trajectory Planning"]
    
 [[extra.experience.works]]
   company = "EDALAB s.r.l."
   position = "Software Developer"
   year = "2021–2022"
-  description = "Development of Web and Mobile applications in the IoT and HealthCare environments using the React and React Native Frameworks. Use of Bluetooth and BluetoothLE communication protocols for Android app development"
+  description = "Sviluppo di applicazioni mobile e web in ambito IoT e HealtCare usando i framework React e React Native. Impiego dei protocolli di comunicazione Bluetooth e BluetoothLE per lo sviluppo di applicazioni Android."
   skills = ["React", "React Native", "JavaScript", "TypeScript", "Android BLE"]
     
 [[extra.experience.works]]
   company = "Makeroni"
-  position = "Waiter During Weekends"
+  position = "Cameriere durante i Weekend"
   year = "2016–2020"
   description = ""
   skills = []
 
 
 [[extra.education.courses]]
-  course = "Master's degree in Computer Engineering for Robotics and Smart Industry"
+  course = "Laurea Magistrale in Computer Engineering for Robotics and Smart Industry"
   institution = "UNIVR"
   year = "2020-2023"
   mark = "110L/110"
 
 [[extra.education.courses]]
-  course = "Bachelor Degree in Computer Science"
+  course = "Laurea Triennale in Informatica"
   institution = "UNIVR"
   year = "2017-2020"
   mark = "109/110"
 
 [[extra.education.courses]]
-  course = "High School"
+  course = "Scuola Superiore"
   institution = "Liceo Scientifico G. Galilei Verona"
   year = "2012-2017"
 
@@ -66,11 +66,9 @@ title = ""
   link = "https://www.linkedin.com/in/nicola-marchiotto-3bb3a3171/"
 +++
 
-<!-- [[extra.avatar_icons]]
-  icon = "mail"
-  link = "mailto:nicola.marchiotto110198@gmail.com" -->
-
-Hi, I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to share my portfolio and to keep track of my hobbies.
+Sono Nicola Marchiotto, Ingegnere Robotico e Informatico. Questo è un blog che ho sviluppato per convidere facilmente il mio portofolio e per tenere traccia dei miei hobby.
+<!-- I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to share my portfolio and to keep track of my hobbies. -->
 
 <br>
-Computer Science is what I am good at and it is part of my daily routine. Electronics and Mechanics are my weak points, but on which I am plannig to get better at with my home projects. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.
+L'informatica è il mio punto forte e fa parte della mia routine quotidiana. Mi piacerebbe imparare di più di Elettronica e Meccanica, e punto di migliorare tali lacune sperimentando con futuri progetti "fai da te". Sono un calciatore dilettante e un lettore occasionale, a cui serve sempre un'eternità per finire un libro.
+<!-- Computer Science is what I am good at and it is part of my daily routine. Electronics and Mechanics are my weak points, but on which I am plannig to get better at with my home projects. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book. -->
