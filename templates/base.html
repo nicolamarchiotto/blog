@@ -39,7 +39,7 @@
 <body class="bg-gray-50 w-screen overflow-hidden h-screen ">
   <!-- Top nav bar -->
 
-  <div class="hidden xl:flex h-[5%] ">
+  <div class="hidden xl:flex h-[7%] ">
     {% block nav -%}
     {{ macros_nav::nav(website_title=config.title) }}
     {% endblock nav -%}
@@ -47,17 +47,18 @@
 
   <!-- Container -->
   <!-- style="height: 95%; padding-left: 4px; padding-right: 4px; overflow-y: scroll; scrollbar-width: thin;" -->
-  <div class="px-4 overflow-y-scroll h-[100%] lg:h-[95%]">
+  <div class="px-4 overflow-y-scroll h-[100%] lg:h-[93%]">
     {% block content -%}
     {% endblock content -%}
 
   </div>
   <!-- FAB  -->
-  <div class="xl:hidden group fixed bottom-0 right-0 m-2 flex items-end justify-end">
+
+  <div class="xl:hidden group fixed bottom-0 right-0 m-2 flex">
     <div>
       <button class="relative group">
         <div
-          class="relative flex overflow-hidden items-center justify-center rounded-full w-11 h-11 transform transition-all bg-blue-600 hover:bg-blue-700 duration-[0.2s] shadow-lg ring-0 ring-blue-600 hover:ring-1 group-focus:ring-1 ring-opacity-30">
+          class="relative flex overflow-hidden items-center justify-center rounded-full w-11 h-11 transform transition-all bg-blue-600 hover:bg-blue-700 duration-[0.2s] shadow-lg ring-1 ring-gray-600 hover:ring-1 group-focus:ring-1 ring-opacity-30">
           <div
             class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-[0.2s] origin-center overflow-hidden ">
             <div
@@ -83,12 +84,12 @@
         </div>
       </button>
     </div>
-    <!-- sub left -->
+    <!-- right -->
     <div
       class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16 flex p-2 scale-100 bg-blue-600 hover:bg-blue-700 text-white ">
       <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 10.5h.375c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H21M3.75 18h15A2.25 2.25 0 0021 15.75v-6a2.25 2.25 0 00-2.25-2.25h-15A2.25 2.25 0 001.5 9.75v6A2.25 2.25 0 003.75 18z" />
-        </svg> -->
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 10.5h.375c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H21M3.75 18h15A2.25 2.25 0 0021 15.75v-6a2.25 2.25 0 00-2.25-2.25h-15A2.25 2.25 0 001.5 9.75v6A2.25 2.25 0 003.75 18z" />
+      </svg> -->
       <a href="{{config.base_url}}/publications">
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -99,7 +100,7 @@
       </a>
 
     </div>
-    <!-- sub top -->
+    <!-- bottom -->
     <div
       class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16  flex p-2 bg-blue-600 hover:bg-blue-700  text-white">
 
@@ -113,17 +114,32 @@
 
     </div>
 
+    <!-- middle -->
+    <div
+      class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-12 group-hover:-translate-x-12 flex p-2 bg-blue-600 hover:bg-blue-700 text-white">
+      <a href="{{config.base_url}}/blog">
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6 shadow-lg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="xl:hidden group fixed top-0 right-0 mt-2 mr-[52px] flex">
     <!-- sub top top -->
     <div
-      class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-32 flex bg-blue-600">
+      class="absolute rounded-full scale-x-100 flex">
 
       <a {% if lang=='it' -%} href="/" {% elif lang=='en' -%} href="/it" {%endif-%}
-        class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline">
-        {% if lang == 'en' -%}
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
-          image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512">
+        class="inline-block text-gray-600 no-underline w-11 h-11 hover:text-gray-900 hover:text-underline">
+        {% if lang == 'it' -%}
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-11 h-11" shape-rendering="geometricPrecision"
+          text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+          viewBox="0 0 512 512">
           <g fill-rule="nonzero">
-            <path fill="#fff"
+            <path fill="#b2bdcf"
               d="M256 0c70.68 0 134.69 28.66 181.01 74.99C483.34 121.31 512 185.32 512 256c0 70.68-28.66 134.69-74.99 181.01C390.69 483.34 326.68 512 256 512c-70.68 0-134.69-28.66-181.01-74.99C28.66 390.69 0 326.68 0 256c0-70.68 28.66-134.69 74.99-181.01C121.31 28.66 185.32 0 256 0z" />
             <path fill="#fff"
               d="M256 19.48c65.3 0 124.46 26.48 167.25 69.27l1.09 1.18c42.14 42.71 68.18 101.37 68.18 166.06 0 65.31-26.5 124.46-69.29 167.25l-1.18 1.09c-42.73 42.16-101.4 68.19-166.05 68.19-65.23 0-124.37-26.51-167.18-69.33-42.84-42.74-69.33-101.89-69.33-167.2 0-65.31 26.48-124.45 69.27-167.24C131.55 45.96 190.7 19.48 256 19.48z" />
@@ -135,11 +151,12 @@
               d="M448.3 328.16h-48.11l49.35 24.72c3.21-6.41 6.11-13 8.69-19.75l-9.93-4.97zm-9.34-187.76-86.42 43.33h48.11l48.95-24.5c-3.23-6.46-6.79-12.75-10.64-18.83zM212.41 299.26v168.75c14.08 2.87 28.66 4.4 43.59 4.4 14.76 0 29.19-1.49 43.13-4.3V299.26h168.94c2.83-13.98 4.34-28.44 4.34-43.27 0-14.88-1.51-29.42-4.37-43.47H299.13V43.9A217.404 217.404 0 0 0 256 39.59c-14.93 0-29.51 1.54-43.59 4.4v168.53H43.97a217.777 217.777 0 0 0-4.37 43.47c0 14.83 1.51 29.29 4.34 43.27h168.47zM63.12 183.84h48.11l-48.89-24.48c-3.2 6.41-6.11 13.02-8.68 19.76l9.46 4.72zm95.87 144.43h-48.11l-48.57 24.31A216.76 216.76 0 0 0 73 371.52l86.43-43.25h-.44z" />
           </g>
         </svg>
-        {% elif lang == 'it' -%}
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
-        image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512">
+        {% elif lang == 'en' -%}
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-11 h-11" shape-rendering="geometricPrecision"
+          text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+          viewBox="0 0 512 512">
           <g fill-rule="nonzero">
-            <path fill="#fff"
+            <path fill="#b2bdcf"
               d="M256 0c70.68 0 134.69 28.66 181.01 74.99C483.34 121.31 512 185.32 512 256c0 70.68-28.66 134.69-74.99 181.01C390.69 483.34 326.68 512 256 512c-70.68 0-134.69-28.66-181.01-74.99C28.66 390.69 0 326.68 0 256c0-70.68 28.66-134.69 74.99-181.01C121.31 28.66 185.32 0 256 0z" />
             <path fill="#fff"
               d="M256 19.48c65.3 0 124.46 26.48 167.25 69.27l1.09 1.18c42.14 42.71 68.18 101.37 68.18 166.06 0 65.31-26.49 124.46-69.28 167.25l-1.19 1.09c-42.73 42.16-101.4 68.19-166.05 68.19-65.3 0-124.45-26.49-167.24-69.28-42.79-42.79-69.29-101.95-69.29-167.25 0-65.23 26.51-124.38 69.34-167.18C131.55 45.97 190.7 19.48 256 19.48z" />
@@ -150,21 +167,6 @@
           </g>
         </svg>
         {%endif-%}
-      </a>
-
-    </div>
-
-
-    <!-- sub middle -->
-    <div
-      class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-12 group-hover:-translate-x-12 flex p-2 bg-blue-600 hover:bg-blue-700 text-white">
-      <a href="{{config.base_url}}/blog">
-
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-6 h-6 shadow-lg">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z" />
-        </svg>
       </a>
     </div>
   </div>
