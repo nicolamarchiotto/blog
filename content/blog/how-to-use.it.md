@@ -1,13 +1,12 @@
 +++
 title = "How to use this theme"
 date = 2022-03-16
-description = "Example of how to use kodama theme."
+description = "Example of how to use kodama theme"
 [extra]
 toc = false
-header_img = "static/img/pc.jpg"
 tags = ["test1","test2"]
 insert_anchor_links = "none"
-
+icon = "test"
 +++
 
 ## Summary

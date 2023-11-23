@@ -12,8 +12,8 @@ extra.index_show = true
 extra.hidden_nav = false
 
 extra.publications_types = [
-  { title = "Thesis", type = "thesis" },
-  { title = "Conferences ", type = "conferences" },
+  { title = "Tesi", type = "thesis" },
+  { title = "Conferenze ", type = "conferences" },
   { title = "Workshops ", type = "workshop" }
 ]
 +++

@@ -4,6 +4,8 @@ date = 2020-07-09
 page_template="index.html"
 path = "home"
 
+sort_by = "title"
+
 [extra]
 title = ""
 
