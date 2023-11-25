@@ -52,8 +52,40 @@
     {% endblock content -%}
 
   </div>
-  <!-- FAB  -->
 
+  <!-- FAB NAVIGATION NEW  -->
+  <div class="xl:hidden bottom-0 left-0 m-2 flex absolute">
+
+    <input type="checkbox" id="choose-me" class="peer hidden" />
+    <label for="choose-me"
+        class="rounded-full transition-all w-11 h-11 duration-[0.2s] ease-out flex p-2 scale-100 bg-blue-600 text-white shadow-lg peer-checked:bg-blue-700">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor"
+          class="w-7 h-7 hidden peer-checked:scale-y-100">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+          class="w-7 h-7 scale-y-100 peer-checked:scale-y-0">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+        </svg>
+      
+    </label>
+    <div
+      class="absolute rounded-full transition-all w-11 h-11 duration-[0.2s] ease-out scale-y-0 peer-checked:scale-y-100 left-20 flex p-2 scale-100 bg-blue-600 hover:bg-blue-700 text-white shadow-lg">
+      <a {% if lang=='en' -%} href="{{config.base_url}}/publications" {% elif lang=='it' -%}
+        href="{{config.base_url}}/it/publications" {%endif-%}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor"
+          class="w-7 h-7">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- FAB NAVIGATION  -->
   <div class="xl:hidden group fixed bottom-0 right-0 m-2 flex">
     <div>
       <button class="relative group">
@@ -80,33 +112,34 @@
                 class="absolute bg-white h-[2.5px] w-5 transform transition-all duration-[0.2s] -rotate-0 delay-300 group-focus:-rotate-45">
               </div>
             </div>
+
           </div>
         </div>
       </button>
     </div>
-    <!-- right -->
-    <div
-      class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16 flex p-2 scale-100 bg-blue-600 hover:bg-blue-700 text-white ">
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21 10.5h.375c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H21M3.75 18h15A2.25 2.25 0 0021 15.75v-6a2.25 2.25 0 00-2.25-2.25h-15A2.25 2.25 0 001.5 9.75v6A2.25 2.25 0 003.75 18z" />
-      </svg> -->
-      <a href="{{config.base_url}}/publications">
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-6 h-6 shadow-lg">
+    <!-- paper -->
+    <div
+      class="absolute rounded-full transition-all w-11 h-11 duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16 flex p-2 scale-100 bg-blue-600 hover:bg-blue-700 text-white shadow-lg">
+      <a {% if lang=='en' -%} href="{{config.base_url}}/publications" {% elif lang=='it' -%}
+        href="{{config.base_url}}/it/publications" {%endif-%}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor"
+          class="w-7 h-7">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
         </svg>
       </a>
 
     </div>
-    <!-- bottom -->
-    <div
-      class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16  flex p-2 bg-blue-600 hover:bg-blue-700  text-white">
 
-      <a href="{{config.base_url}}">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-6 h-6 shadow-lg">
+    <!-- user -->
+    <div
+      class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16  flex p-2 bg-blue-600 hover:bg-blue-700  text-white shadow-lg">
+
+      <a {% if lang=='en' -%} href="{{config.base_url}}" {% elif lang=='it' -%} href="{{config.base_url}}/it"
+        {%endif-%}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+          class="w-7 h-7">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
         </svg>
@@ -114,27 +147,63 @@
 
     </div>
 
-    <!-- middle -->
+    <!-- blog -->
     <div
-      class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-12 group-hover:-translate-x-12 flex p-2 bg-blue-600 hover:bg-blue-700 text-white">
-      <a href="{{config.base_url}}/blog">
-
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-6 h-6 shadow-lg">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z" />
+      class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-12 group-hover:-translate-x-12 flex p-2 bg-blue-600 hover:bg-blue-700 text-white shadow-lg">
+      <a {% if lang=='en' -%} href="{{config.base_url}}/blog" {% elif lang=='it' -%} href="{{config.base_url}}/it/blog"
+        {%endif-%}>
+        <svg version="1.1" id="_x32_" class="w-7 h-7" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#ffffff"
+          stroke-width="0">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <g>
+              <rect x="293.186" y="307.184" width="131.572" height="112.986"></rect>
+              <rect x="87.243" y="308.893" width="154.448" height="17.162"></rect>
+              <rect x="87.243" y="401.298" width="154.448" height="17.162"></rect>
+              <rect x="87.243" y="355.1" width="154.448" height="17.162"></rect>
+              <path stroke-width="0"
+                d="M416.428,0.004H95.58C42.787,0.013,0.016,42.792,0,95.577v303.685 c0.025,62.262,50.463,112.717,112.742,112.734h286.524c62.27-0.017,112.717-50.464,112.734-112.734V95.577 C511.992,42.792,469.212,0.013,416.428,0.004z M464.805,399.262c-0.008,18.15-7.308,34.424-19.198,46.34 c-11.916,11.891-28.19,19.19-46.34,19.198H112.742c-18.15-0.009-34.433-7.308-46.348-19.198 c-11.892-11.916-19.182-28.19-19.198-46.34V118.696h417.61V399.262z">
+              </path>
+              <rect x="87.243" y="355.1" width="154.448" height="17.162"></rect>
+              <path
+                d="M88.96,267.908h34.583c19.71,0,31.642-8.581,31.642-26.548c0-10.852-6.167-18.368-12.2-20.648v-0.268 c6.034-3.352,10.592-9.519,10.592-19.432c0-14.489-9.251-24.268-29.086-24.268H88.96c-0.796,0-1.332,0.536-1.332,1.34v88.475 C87.628,267.371,88.164,267.908,88.96,267.908z M107.338,193.495c0-0.528,0.251-0.804,0.804-0.804h13.944 c7.5,0,11.925,3.888,11.925,10.584c0,6.712-4.425,10.734-11.925,10.734h-13.944c-0.553,0-0.804-0.268-0.804-0.804V193.495z M107.338,229.955c0-0.528,0.251-0.795,0.804-0.795h15c8.061,0,12.343,4.424,12.343,11.405c0,7.097-4.282,11.396-12.343,11.396h-15 c-0.553,0-0.804-0.276-0.804-0.812V229.955z">
+              </path>
+              <path
+                d="M181.516,267.908h59.404c0.796,0,1.332-0.536,1.332-1.349v-14.874c0-0.813-0.536-1.341-1.332-1.341h-40.224 c-0.544,0-0.804-0.268-0.804-0.812v-71.447c0-0.804-0.528-1.34-1.341-1.34h-17.036c-0.805,0-1.332,0.536-1.332,1.34v88.475 C180.183,267.371,180.711,267.908,181.516,267.908z">
+              </path>
+              <path
+                d="M292.708,269.374c15.963,0,28.558-7.366,33.251-22.115c2.011-6.301,2.539-11.396,2.539-24.938 c0-13.542-0.528-18.637-2.539-24.939c-4.693-14.739-17.288-22.114-33.251-22.114c-15.956,0-28.558,7.375-33.243,22.114 c-2.02,6.302-2.556,11.397-2.556,24.939c0,13.542,0.536,18.637,2.556,24.938C264.149,262.009,276.752,269.374,292.708,269.374z M278.361,202.746c2.011-6.301,6.847-10.055,14.346-10.055c7.508,0,12.335,3.754,14.346,10.055 c1.073,3.226,1.474,7.634,1.474,19.576c0,11.924-0.402,16.357-1.474,19.567c-2.011,6.31-6.838,10.072-14.346,10.072 c-7.5,0-12.335-3.763-14.346-10.072c-1.064-3.21-1.475-7.643-1.475-19.567C276.886,210.38,277.297,205.972,278.361,202.746z">
+              </path>
+              <path
+                d="M387.961,269.374c16.081,0,28.685-8.171,33.251-22.794c1.6-4.952,2.263-12.46,2.263-20.505v-7.517 c0-0.788-0.536-1.333-1.332-1.333h-31.366c-0.813,0-1.349,0.545-1.349,1.333v12.888c0,0.796,0.536,1.332,1.349,1.332h12.326 c0.536,0,0.805,0.277,0.805,0.805c0,3.879-0.403,6.703-1.073,8.991c-1.878,6.026-7.777,9.386-14.614,9.386 c-7.91,0-12.88-3.763-14.891-10.072c-1.064-3.21-1.466-7.643-1.466-19.567c0-11.941,0.402-16.223,1.466-19.441 c2.011-6.302,6.847-10.19,14.631-10.19c7.5,0,12.05,3.218,15.678,9.385c0.269,0.67,0.939,0.939,1.886,0.67l14.338-6.033 c0.796-0.402,0.947-1.206,0.536-2.019c-4.299-10.995-15.419-19.425-32.439-19.425c-16.232,0-28.835,7.375-33.527,22.114 c-2.012,6.302-2.556,11.397-2.556,24.939c0,13.542,0.545,18.637,2.556,24.938C359.126,262.009,371.73,269.374,387.961,269.374z">
+              </path>
+            </g>
+          </g>
         </svg>
       </a>
     </div>
   </div>
-  <div class="xl:hidden group fixed top-0 right-0 mt-2 mr-[52px] flex">
-    <!-- sub top top -->
-    <div
-      class="absolute rounded-full scale-x-100 flex">
 
-      <a {% if lang=='it' -%} href="/" {% elif lang=='en' -%} href="/it" {%endif-%}
-        class="inline-block text-gray-600 no-underline w-11 h-11 hover:text-gray-900 hover:text-underline">
-        {% if lang == 'it' -%}
+
+  <!-- FAB LANGUAGE  -->
+
+  {#Get the translations for this section if any-#}
+  {% set translations = section.translations | default(value=page.translations|default(value=[])) -%}
+
+  {%set langs = config.extra.language_codes | default(value=[]) -%}
+  {%for trans_code in langs -%}
+  {#Find if a translation exist for this section -#}
+  {% set other_lang = translations | filter(attribute="lang", value=trans_code) | first -%}
+  {% if other_lang and other_lang.lang != lang -%}
+
+  <div class="xl:hidden group fixed top-0 right-0 mt-2 mr-[52px] flex">
+    <div class="absolute rounded-full scale-x-100 flex">
+
+      <a href="{{other_lang.permalink}}"
+        class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline">
+        {% if other_lang and lang == 'en' -%}
         <svg xmlns="http://www.w3.org/2000/svg" class="w-11 h-11" shape-rendering="geometricPrecision"
           text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
           viewBox="0 0 512 512">
@@ -151,7 +220,7 @@
               d="M448.3 328.16h-48.11l49.35 24.72c3.21-6.41 6.11-13 8.69-19.75l-9.93-4.97zm-9.34-187.76-86.42 43.33h48.11l48.95-24.5c-3.23-6.46-6.79-12.75-10.64-18.83zM212.41 299.26v168.75c14.08 2.87 28.66 4.4 43.59 4.4 14.76 0 29.19-1.49 43.13-4.3V299.26h168.94c2.83-13.98 4.34-28.44 4.34-43.27 0-14.88-1.51-29.42-4.37-43.47H299.13V43.9A217.404 217.404 0 0 0 256 39.59c-14.93 0-29.51 1.54-43.59 4.4v168.53H43.97a217.777 217.777 0 0 0-4.37 43.47c0 14.83 1.51 29.29 4.34 43.27h168.47zM63.12 183.84h48.11l-48.89-24.48c-3.2 6.41-6.11 13.02-8.68 19.76l9.46 4.72zm95.87 144.43h-48.11l-48.57 24.31A216.76 216.76 0 0 0 73 371.52l86.43-43.25h-.44z" />
           </g>
         </svg>
-        {% elif lang == 'en' -%}
+        {% elif other_lang and lang == 'it' -%}
         <svg xmlns="http://www.w3.org/2000/svg" class="w-11 h-11" shape-rendering="geometricPrecision"
           text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
           viewBox="0 0 512 512">
@@ -170,6 +239,9 @@
       </a>
     </div>
   </div>
+  {%endif-%}
+  {% endfor -%}
+
   {% block footer -%}
   <!-- <footer class="bg-white">
     <div class="bg-white text-gray-400 container max-w-6xl mx-auto py-2 text-center">
