@@ -29,14 +29,6 @@ title = ""
   year = "2021–2022"
   description = "Development of Web and Mobile applications in the IoT and HealthCare environments using the React and React Native Frameworks. Use of Bluetooth and BluetoothLE communication protocols for Android app development"
   skills = ["React", "React Native", "JavaScript", "TypeScript", "Android BLE"]
-    
-[[extra.experience.works]]
-  company = "Makeroni"
-  position = "Waiter During Weekends"
-  year = "2016–2020"
-  description = ""
-  skills = []
-
 
 [[extra.education.courses]]
   course = "Master's degree in Computer Engineering for Robotics and Smart Industry"

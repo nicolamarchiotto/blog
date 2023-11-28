@@ -11,7 +11,6 @@ icon = "test"
 
 ## Summary
 
-JJJJJJJ
 This theme is greatly inspired from hugo academic theme.
 
 First lets introduce some technical details:

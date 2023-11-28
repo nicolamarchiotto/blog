@@ -29,13 +29,7 @@ title = ""
   year = "2021–2022"
   description = "Sviluppo di applicazioni mobile e web in ambito IoT e HealtCare usando i framework React e React Native. Impiego dei protocolli di comunicazione Bluetooth e BluetoothLE per lo sviluppo di applicazioni Android."
   skills = ["React", "React Native", "JavaScript", "TypeScript", "Android BLE"]
-    
-[[extra.experience.works]]
-  company = "Makeroni"
-  position = "Cameriere durante i Weekend"
-  year = "2016–2020"
-  description = ""
-  skills = []
+
 
 
 [[extra.education.courses]]
@@ -72,5 +66,5 @@ Sono Nicola Marchiotto, Ingegnere Robotico e Informatico. Questo è un blog che 
 <!-- I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to share my portfolio and to keep track of my hobbies. -->
 
 <br>
-L'informatica è il mio punto forte e fa parte della mia routine quotidiana. Mi piacerebbe imparare di più di Elettronica e Meccanica, e punto di migliorare tali lacune sperimentando con futuri progetti "fai da te". Sono un calciatore dilettante e un lettore occasionale, a cui serve sempre un'eternità per finire un libro.
+L'informatica è il mio punto forte e fa parte della mia routine quotidiana. Mi piacerebbe imparare di più di Elettronica e Meccanica, e punto a migliorare tali lacune sperimentando con i miei <em>home-projects</em>. Sono un calciatore dilettante e un lettore occasionale a cui serve sempre un'eternità per finire un libro.
 <!-- Computer Science is what I am good at and it is part of my daily routine. Electronics and Mechanics are my weak points, but on which I am plannig to get better at with my home projects. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book. -->
