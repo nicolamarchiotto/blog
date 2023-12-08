@@ -60,7 +60,7 @@ title = ""
   link = "https://www.linkedin.com/in/nicola-marchiotto-3bb3a3171/"
 +++
 
-I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to easily share my portfolio and to keep track of my hobbies.
+I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to easily share my portfolio.
 
 <br>
 Computer Science is what I am good at and it is part of my daily routine. In my free time I like to work on various projects. My goal is to get better at Electronics and Mechanics, the fields in which I lack more expertise. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.

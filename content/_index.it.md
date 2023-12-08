@@ -62,7 +62,7 @@ title = ""
   link = "https://www.linkedin.com/in/nicola-marchiotto-3bb3a3171/"
 +++
 
-Sono Nicola Marchiotto, Ingegnere Robotico e Informatico. Questo è un blog che ho sviluppato per convidere facilmente il mio portofolio e per tenere traccia dei miei hobby.
+Sono Nicola Marchiotto, Ingegnere Robotico e Informatico. Questo è un blog che ho sviluppato per convidere facilmente il mio portofolio.
 
 <br>
 L'informatica è il mio punto forte e fa parte della mia routine quotidiana. Nel tempo libero mi piace sperimentare con vari progetti, puntando a migliorare nei campi in cui ho meno esperienza, l'Elettronica e la Meccanica. Sono un calciatore dilettante e un lettore occasionale a cui serve sempre un'eternità per finire un libro.
