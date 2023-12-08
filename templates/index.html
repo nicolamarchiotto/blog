@@ -3,7 +3,7 @@
 {% block content %}
 
 {% block biography %}
-<div class="max-w-8xl mx-auto container grid grid-cols-1 xl:grid-cols-4 pt-4 pb-28 lg:pb-4 px-0 bg-white shadow-lg">
+<div class="max-w-8xl mx-auto container grid grid-cols-1 xl:grid-cols-4 pt-4 pb-28 lg:pb-4 px-0 bg-white shadow-lg h-full">
   <div class="pt-4 px-4 xl:mx-4 flex flex-col md:flex-row xl:flex-col justify-center xl:justify-normal">
     <div class="px-0 md:px-6 xl:px-0">
       {% set image = resize_image(path=config.extra.avatar, format="webp", width=208, height=208) %}

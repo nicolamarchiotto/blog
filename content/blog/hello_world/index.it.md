@@ -1,7 +1,7 @@
 +++
 title = "Hello world"
 date = 2021-03-16
-description = "Test description, the description is much prettier to see if there are at least two rows of content"
+description = "Test description"
 [extra]
 toc = false
 icon = "docker"

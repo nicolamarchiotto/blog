@@ -63,4 +63,4 @@ title = ""
 I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to easily share my portfolio and to keep track of my hobbies.
 
 <br>
-Computer Science is what I am good at and it is part of my daily routine. Electronics and Mechanics are my weak points, but on which I am plannig to get better at with my home projects. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.
+Computer Science is what I am good at and it is part of my daily routine. Electronics and Mechanics are my weak points, but on which I am plannig to get better at in my free time. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.
