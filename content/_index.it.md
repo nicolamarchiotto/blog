@@ -13,8 +13,8 @@ title = ""
   company = "Exor International"
   position = "Software Engineer"
   year = "2023-presente"
-  description = "Sviluppo software per l'industria dell'automazione. Sviluppo di tecnologie per migliorare il controllo qualità nelle linee di produzione dell'azienda. Sviluppo software per macchinari interni."
-  skills = ["ML Vision Based QA", "Docker", "CoDeSys", " OPC UA", "JMobile", "C++", "Qt"]
+  description = "Sviluppo di soluzione per migliorare i processi di controllo qualità nelle linee di produzione dell'azienda. Sviluppo software per macchinari interni, inspezione ottica automatica, applicazioni di machine learning"
+  skills = ["ML for Optical Inspection", "Docker", "CoDeSys", " OPC UA", "JMobile", "C++", "Qt"]
 
 [[extra.experience.works]]
   company = "Altair Robotics Lab"
@@ -63,8 +63,6 @@ title = ""
 +++
 
 Sono Nicola Marchiotto, Ingegnere Robotico e Informatico. Questo è un blog che ho sviluppato per convidere facilmente il mio portofolio e per tenere traccia dei miei hobby.
-<!-- I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to share my portfolio and to keep track of my hobbies. -->
 
 <br>
-L'informatica è il mio punto forte e fa parte della mia routine quotidiana. Mi piacerebbe imparare di più di Elettronica e Meccanica, e punto a migliorare tali lacune sperimentando nel tempo libero. Sono un calciatore dilettante e un lettore occasionale a cui serve sempre un'eternità per finire un libro.
-<!-- Computer Science is what I am good at and it is part of my daily routine. Electronics and Mechanics are my weak points, but on which I am plannig to get better at with my home projects. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book. -->
+L'informatica è il mio punto forte e fa parte della mia routine quotidiana. Nel tempo libero mi piace sperimentare con vari progetti, puntando a migliorare nei campi in cui ho meno esperienza, l'Elettronica e la Meccanica. Sono un calciatore dilettante e un lettore occasionale a cui serve sempre un'eternità per finire un libro.

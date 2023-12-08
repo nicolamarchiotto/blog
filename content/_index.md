@@ -13,8 +13,8 @@ title = ""
   company = "Exor International"
   position = "Software Engineer"
   year = "2023-present"
-  description = "Software development for the automation industry. Development of solutions aimed to improve the quality assurance performances of the company production lines."
-  skills = ["ML Vision Based QA", "Docker", "CoDeSys", " OPC UA", "JMobile", "C++", "Qt"]
+  description = "Development of solutions aimed to improve the quality assurance processes of the company production lines. Software development, automatic optical inspection, ML applications"
+  skills = ["ML for Optical Inspection", "Docker", "CoDeSys", " OPC UA", "JMobile", "C++", "Qt"]
 
 [[extra.experience.works]]
   company = "Altair Robotics Lab"
@@ -63,4 +63,4 @@ title = ""
 I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to easily share my portfolio and to keep track of my hobbies.
 
 <br>
-Computer Science is what I am good at and it is part of my daily routine. Electronics and Mechanics are my weak points, but on which I am plannig to get better at in my free time. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.
+Computer Science is what I am good at and it is part of my daily routine. In my free time I like to work on various projects. My goal is to get better at Electronics and Mechanics, the fields in which I lack more expertise. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.
