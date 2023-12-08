@@ -3,8 +3,8 @@ title = "Home"
 date = 2020-07-09
 page_template="index.html"
 path = "home"
-
-sort_by = "title"
+weight = 10
+sort_by = "weight"
 
 [extra]
 title = ""

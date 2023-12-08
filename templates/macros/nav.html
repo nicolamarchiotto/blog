@@ -18,41 +18,7 @@
       id="nav-content">
       <ul class="list-reset flex flex-wrap sm:justify-end justify-center flex-1">
 
-        {% if lang == config.default_language -%}
-        {% set menu_items = config.extra.menu_items -%}
-        {% else -%}
-        {% set menu_items = config.extra[lang].menu_items -%}
-        {% endif -%}
-
-
-        {% for item in menu_items -%}
-        <li class="text-lg">
-          <a href={{ get_url(path=item.path, trailing_slash=false, lang=lang) }} class={%if current_path and
-            current_path in ['/','/it/'] %}"inline-block py-2 px-4 text-[#2563eb] font-bold no-underline"{% else %}"inline-block
-            text-black font-bold py-2 px-4"{%endif%}>
-            {{item.name}}
-          </a>
-        </li>
-        {% endfor -%}
-
-        {# Get the upper section -#}
-        {% set dot_lang = macros::dot_lang() -%}
-        {% set index_section = get_section(path="_index"~dot_lang~".md", metadata_only=true) -%}
-        {% for ssection in index_section.subsections -%}
-        {% set ssection_data = get_section(path=ssection, metadata_only=true) -%}
-        <!-- {% if not ssection_data.extra.hidden_nav -%} -->
-        <li class="text-lg">
-          <a href="{{ get_url(path=ssection_data.path, trailing_slash=false) }}" class={%if current_path and
-            current_path is starting_with(ssection_data.path) %}"inline-block py-2 px-4 text-blue-600 font-bold
-            no-underline"{% else %}"inline-block text-black font-bold
-            py-2 px-4"{%endif%}>
-            {{ssection_data.title}}
-          </a>
-        </li>
-        <!-- {% endif -%} -->
-        {% endfor -%}
-
-
+        
         {#Get the translations for this section if any-#}
         {% set translations = section.translations | default(value=page.translations|default(value=[])) -%}
 
@@ -70,9 +36,9 @@
         3) Put a link to the home page of the language
         -#}
         {% if other_lang and other_lang.lang != lang -%}
-        <li>
+        <li class="flex items-center">
           <a href="{{other_lang.permalink}}"
-            class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline pt-3 px-4 align-middle">
+            class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline px-4 align-middle">
             <div class="align-middle ">
               {% if other_lang and lang == 'en' -%}
 
@@ -131,6 +97,44 @@
         </li>
         {%endif-%}
         {% endfor -%}
+
+
+        {# Get the upper section -#}
+        {% set dot_lang = macros::dot_lang() -%}
+        <!-- {% set index_section = get_section(path="_index"~dot_lang~".md", metadata_only=true) -%} -->
+        {% set index_section = get_section(path="_index.md", metadata_only=true) -%}
+        {% for ssection in index_section.subsections -%}
+        {% set ssection_data = get_section(path=ssection, metadata_only=true) -%}
+        <!-- {% if not ssection_data.extra.hidden_nav -%} -->
+        <li class="text-lg">
+          <a href="{{ get_url(path=ssection_data.path, trailing_slash=false) }}" class={%if current_path and
+            current_path is starting_with(ssection_data.path) %}"inline-block py-2 px-4 text-blue-600 font-bold
+            no-underline"{% else %}"inline-block text-black font-bold
+            py-2 px-4"{%endif%}>
+            {{ssection_data.title}}
+          </a>
+        </li>
+        <!-- {% endif -%} -->
+        {% endfor -%}
+
+        {% if lang == config.default_language -%}
+        {% set menu_items = config.extra.menu_items -%}
+        {% else -%}
+        {% set menu_items = config.extra[lang].menu_items -%}
+        {% endif -%}
+
+
+        {% for item in menu_items -%}
+        <li class="text-lg">
+          <a href={{ get_url(path=item.path, trailing_slash=false, lang=lang) }} class={%if current_path and
+            current_path in ['/','/it/'] %}"inline-block py-2 px-4 text-[#2563eb] font-bold no-underline"{% else %}"inline-block
+            text-black font-bold py-2 px-4"{%endif%}>
+            {{item.name}}
+          </a>
+        </li>
+        {% endfor -%}
+        
+        
       </ul>
     </div>
   </div>

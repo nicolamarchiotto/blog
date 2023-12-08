@@ -64,7 +64,7 @@ language_codes = [ "en", "it" ]
 
 [extra.it]
 menu_items = [
-   { path = "/it/", name = "Su di me" },
+   { path = "/it/", name = "About Me" },
 ]
 
 # Your translations
