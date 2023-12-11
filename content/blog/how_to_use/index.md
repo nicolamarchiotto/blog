@@ -3,6 +3,7 @@ title = "How to use this theme"
 date = 2022-03-16
 description = "Example of how to use kodama theme"
 [extra]
+hide = true
 toc = false
 tags = ["test1","test2"]
 insert_anchor_links = "none"

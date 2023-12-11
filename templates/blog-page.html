@@ -6,7 +6,7 @@
 {% endblock title -%}
 
 {% block content %}
-<div class="container max-w-8xl mx-auto bg-white px-4 pt-4 pb-28 lg:pb-8 shadow-lg">
+<div class="container max-w-8xl mx-auto bg-white px-4 pt-8 pb-28 lg:pb-8 shadow-lg min-h-full">
   <div class="flex flex-col-reverse xl:flex-row">
     <h1 class="grow font-bold font-sans break-normal text-gray-900 text-3xl">{{ page.title }}</h1>
     {% if page.date %}<p class="text-sm md:text-base font-normal text-gray-600 py-2">{{ page.date }}</p>{% endif %}
@@ -15,7 +15,7 @@
   {% if page.extra.tldr -%}
   <p class="pb-4 text-gray-600"> <span class="font-bold">TLDR.</span> {{ page.extra.tldr | safe }} </p>
   {% endif -%}
-  <article class="prose prose-indigo max-w-screen-xl">
+  <article class="prose prose-indigo max-w-screen-2xl pt-4">
     {{ macros::toc() }}
     {{ page.content | safe }}
     {% if page.extra.external_link %}<p><a href="{{page.extra.external_link | safe}}" target="_blank">{{page.extra.external_link | safe}}</a></p>{% endif -%}

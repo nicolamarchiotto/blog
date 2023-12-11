@@ -3,6 +3,7 @@ title = "Hello world"
 date = 2021-03-16
 description = "Test description 1"
 [extra]
+hide = true 
 toc = false
 icon = "docker"
 insert_anchor_links = "none"

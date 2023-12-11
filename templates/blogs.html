@@ -1,22 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container max-w-8xl mx-auto pt-4 pb-28 lg:pb-8 ">
+<div class="container max-w-8xl mx-auto pt-8 pb-28 lg:pb-8 ">
 
   <div class="font-sans">
     <h1 class="font-bold font-sans break-normal text-gray-900 text-3xl md:text-4xl">{{section.title}}</h1>
   </div>
 
   
-  <div class=" py-2 font-sans mt-8">
+  <!-- <div class=" py-2 font-sans mt-8">
     <h1 class="break-normal text-black text-md">{{section.description}}</h1>
-  </div>
+  </div> -->
 
 
   <div class="grid gap-4 xl:gap-8 mt-8 md:mt-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full">
     {% for page in section.pages %}
+    {% if not page.extra.hide -%}
 
-    <a href="{{config.base_url}}/{{page.path}}"
+    <a href="{{config.base_url}}{{page.path}}"
       class="transition-all rounded-lg shadow-lg duration-700 bg-white md:hover:bg-blue-600  md:hover:shadow-xl p-2 relative  group overflow-hidden ">
 
       <div class="py-2 px-2 relative  ">
@@ -35,6 +36,8 @@
         <!-- <p class="mt-4 text-base text-gray-600 md:group-hover:text-white  ">{{ page.description | safe }}</p> -->
       </div>
     </a>
+    {% endif %}
+  
     {% endfor %}
   </div>
 
