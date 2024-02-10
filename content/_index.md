@@ -13,9 +13,8 @@ title = ""
   company = "Exor International"
   position = "Software Engineer"
   year = "2023-present"
-  description = "Development of solutions aimed to improve the quality assurance processes of the company production lines. Software development, automatic optical inspection, ML applications"
-  skills = ["ML for Optical Inspection", "Docker", "CoDeSys", " OPC UA", "JMobile", "C++", "Qt"]
-
+  description = "Development of solutions to perform automatic quality assurance in the company production lines. Machine building, optical inspection, ML applications, LLM, software integrations, fault detection"
+  skills = ["ML for Object Detection", "LLM", "Visual Inspection", "Docker", "CoDeSys", " OPC UA", "C++", "Qt"]
 [[extra.experience.works]]
   company = "Altair Robotics Lab"
   position = "Research Fellow"
@@ -60,7 +59,7 @@ title = ""
   link = "https://www.linkedin.com/in/nicola-marchiotto-3bb3a3171/"
 +++
 
-I am Nicola Marchiotto, a Robotic and Software Engineer. This is a website I developed to easily share my portfolio.
+I am Nicola Marchiotto, a Robotic and Software Engineer. 
 
 <br>
-Computer Science is what I am good at and it is part of my daily routine. In my free time I like to work on various projects. My goal is to get better at Electronics and Mechanics, the fields in which I lack more expertise. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.
+Computer Science is what I am good at, and it is part of my daily routine. In my free time I like to work on various projects, which I use as starting points to explore always something new. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.

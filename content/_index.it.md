@@ -13,8 +13,8 @@ title = ""
   company = "Exor International"
   position = "Software Engineer"
   year = "2023-presente"
-  description = "Sviluppo di soluzione per migliorare i processi di controllo qualità nelle linee di produzione dell'azienda. Sviluppo software per macchinari interni, inspezione ottica automatica, applicazioni di machine learning"
-  skills = ["ML for Optical Inspection", "Docker", "CoDeSys", " OPC UA", "JMobile", "C++", "Qt"]
+  description = "Sviluppo di soluzioni per migliorare i processi di controllo qualità nelle linee di produzione dell'azienda. Sviluppo software per macchinari interni, inspezione ottica automatica, applicazioni di machine learning, integrazioni software."
+  skills = ["ML for Object Detection", "LLM", "Visual Inspection", "Docker", "CoDeSys", " OPC UA", "C++", "Qt"]
 
 [[extra.experience.works]]
   company = "Altair Robotics Lab"
@@ -62,7 +62,7 @@ title = ""
   link = "https://www.linkedin.com/in/nicola-marchiotto-3bb3a3171/"
 +++
 
-Sono Nicola Marchiotto, Ingegnere Robotico e Informatico. Questo è un blog che ho sviluppato per convidere facilmente il mio portofolio.
+Sono Nicola Marchiotto, Ingegnere Robotico e Informatico. 
 
 <br>
-L'informatica è il mio punto forte e fa parte della mia routine quotidiana. Nel tempo libero mi piace sperimentare con vari progetti, puntando a migliorare nei campi in cui ho meno esperienza, l'Elettronica e la Meccanica. Sono un calciatore dilettante e un lettore occasionale a cui serve sempre un'eternità per finire un libro.
+L'informatica è il mio punto forte e fa parte della mia routine quotidiana. Nel tempo libero mi piace sperimentare con vari progetti, cercando di imparare sempre qualcosa di nuovo. Sono un calciatore dilettante e un lettore occasionale a cui serve sempre un'eternità per finire un libro.
