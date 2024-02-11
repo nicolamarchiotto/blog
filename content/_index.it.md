@@ -60,6 +60,9 @@ title = ""
 [[extra.avatar_icons]]
   icon = "linkedin"
   link = "https://www.linkedin.com/in/nicola-marchiotto-3bb3a3171/"
+[[extra.avatar_icons]]
+  icon = "goodreads"
+  link = "https://www.goodreads.com/user/show/125751772-nicola"
 +++
 
 Sono Nicola Marchiotto, Ingegnere Robotico e Informatico. 

@@ -13,20 +13,20 @@ title = ""
   company = "Exor International"
   position = "Software Engineer"
   year = "2023-present"
-  description = "Development of solutions to perform automatic quality assurance in the company production lines. Machine building, optical inspection, ML applications, LLM, software integrations, fault detection"
+  description = "Development of solutions to perform automatic quality assurance in the company production lines. Machine building, optical inspection, ML applications, LLM, software integrations, fault detection."
   skills = ["ML for Object Detection", "LLM", "Visual Inspection", "Docker", "CoDeSys", " OPC UA", "C++", "Qt"]
 [[extra.experience.works]]
   company = "Altair Robotics Lab"
   position = "Research Fellow"
   year = "2022–2023"
-  description = "Refinement of a prototype for robot assisted vertebroplasty. Implementation of the software for performing robot registration, planning the surgery and controlling the hardware"
+  description = "Refinement of a prototype for robot assisted vertebroplasty. Implementation of the software for performing robot registration, planning the surgery and controlling the hardware."
   skills = ["Medical Image Analysis", "Robot-Image Registration", "Robot Control", "Trajectory Planning"]
    
 [[extra.experience.works]]
   company = "EDALAB s.r.l."
   position = "Software Developer"
   year = "2021–2022"
-  description = "Development of Web and Mobile applications in the IoT and HealthCare environments using the React and React Native Frameworks. Use of Bluetooth and BluetoothLE communication protocols for Android app development"
+  description = "Development of Web and Mobile applications in the IoT and HealthCare environments using the React and React Native Frameworks. Use of Bluetooth and BluetoothLE communication protocols for Android app development."
   skills = ["React", "React Native", "JavaScript", "TypeScript", "Android BLE"]
 
 [[extra.education.courses]]
@@ -57,6 +57,9 @@ title = ""
 [[extra.avatar_icons]]
   icon = "linkedin"
   link = "https://www.linkedin.com/in/nicola-marchiotto-3bb3a3171/"
+[[extra.avatar_icons]]
+  icon = "goodreads"
+  link = "https://www.goodreads.com/user/show/125751772-nicola"
 +++
 
 I am Nicola Marchiotto, a Robotic and Software Engineer. 
