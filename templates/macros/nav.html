@@ -8,7 +8,7 @@
         {%if lang != config.default_language-%}
         {%set lang_base=lang%}
         {%endif-%}
-        <a class="text-white text-3xl no-underline hover:no-underline font-bold font-sans flex justify-center items-center"
+        <a class="text-white text-3xl font-bold font-sans flex justify-center items-center hover:underline"
           href="{{config.base_url}}/{{lang_base}}">
           {{ website_title }}
         </a>
@@ -37,13 +37,13 @@
           3) Put a link to the home page of the language
           -#}
           {% if other_lang and other_lang.lang != lang -%}
-          <li class="flex items-center">
+          <li class="flex items-center ">
             <a href="{{other_lang.permalink}}"
-              class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline px-4 align-middle">
-              <div class="align-middle ">
+              class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline px-4 align-middle ">
+              <div class="align-middle border-[1px] border-transparent hover:border-blue-200">
                 {% if other_lang and lang == 'en' -%}
 
-                <svg version="1.1" id="Layer_1" class="w-8 shadow-lg"  xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" id="Layer_1" class="w-8 shadow-lg "  xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.2 38.4"
                   style="enable-background:new 0 0 55.2 38.4" xml:space="preserve">
                   <style type="text/css">
@@ -110,8 +110,8 @@
           <li class="text-lg">
             <a href="{{ get_url(path=ssection_data.path, trailing_slash=false) }}" class={%if current_path and
               current_path is starting_with(ssection_data.path) %}"inline-block py-2 px-4 text-white font-bold
-              no-underline"{% else %}"inline-block text-blue-200 font-bold
-              py-2 px-4"{%endif%}>
+              "{% else %}"inline-block text-blue-200 font-bold
+              py-2 px-4 hover:underline"{%endif%}>
               {{ssection_data.title}}
             </a>
           </li>
@@ -129,7 +129,7 @@
           <li class="text-lg">
             <a href={{ get_url(path=item.path, trailing_slash=false, lang=lang) }} class={%if current_path and
               current_path in ['/','/it/'] %}"inline-block py-2 px-4 text-white font-bold no-underline"{% else %}"inline-block
-              text-blue-200 font-bold py-2 px-4"{%endif%}>
+              text-blue-200 font-bold py-2 px-4 hover:underline"{%endif%}>
               {{item.name}}
             </a>
           </li>
