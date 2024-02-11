@@ -59,7 +59,7 @@ title = ""
   link = "https://www.goodreads.com/user/show/125751772-nicola"
 +++
 
-I am Nicola Marchiotto, a Robotic and Software Engineer. 
+I am Nicola Marchiotto, a Robotics and Software Engineer. 
 
 <br>
 Computer Science is what I am good at, and it is part of my daily routine. In my free time I like to work on various projects, which I use as starting points to explore always something new. I am an amateur soccer player and an occasional reader who takes an eternity to finish a book.
