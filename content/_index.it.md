@@ -13,14 +13,14 @@ title = ""
   company = "Exor International"
   position = "Software Engineer"
   year = "2023-presente"
-  description = "Sviluppo di soluzioni per migliorare i processi di controllo qualità nelle linee di produzione dell'azienda. Sviluppo software per macchinari interni, inspezione ottica automatica, applicazioni di machine learning, integrazioni software."
+  description = "Sviluppo di soluzioni per migliorare i processi di controllo qualità nelle linee di produzione dell'azienda. Sviluppo software per macchinari interni, ispezione ottica automatica, applicazioni di Machine Learning, integrazioni software."
   skills = ["ML for Object Detection", "LLM", "Visual Inspection", "Docker", "CoDeSys", " OPC UA", "C++", "Qt"]
 
 [[extra.experience.works]]
   company = "Altair Robotics Lab"
   position = "Ricercatore Borsista"
   year = "2022–2023"
-  description = "Perfezionamento di un prototipo per un intervento di vertebroplastica assistito da robot. Realizzazione del software per la registraione del robot, pianificazione dell’ intervento e controllo dell’hardware."
+  description = "Perfezionamento di un prototipo per un intervento di vertebroplastica assistito da robot. Realizzazione del software per la registrazione del robot, pianificazione dell’ intervento e controllo dell’hardware."
   skills = ["Medical Image Analysis", "Robot-Image Registration", "Robot Control", "Trajectory Planning"]
    
 [[extra.experience.works]]
