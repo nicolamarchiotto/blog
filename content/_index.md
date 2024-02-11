@@ -49,14 +49,11 @@ title = ""
 
 
 [[extra.avatar_icons]]
-  icon = "github"
-  link = "https://github.com/nicolamarchiotto"
-[[extra.avatar_icons]]
-  icon = "gitlab"
-  link = "https://gitlab.com/ziapo98"
-[[extra.avatar_icons]]
   icon = "linkedin"
   link = "https://www.linkedin.com/in/nicola-marchiotto-3bb3a3171/"
+[[extra.avatar_icons]]
+  icon = "github"
+  link = "https://github.com/nicolamarchiotto"
 [[extra.avatar_icons]]
   icon = "goodreads"
   link = "https://www.goodreads.com/user/show/125751772-nicola"
