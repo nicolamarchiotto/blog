@@ -1,5 +1,5 @@
 +++
-title = "Home Server"
+title = "My Home Server"
 date = 2024-04-02
 description = "My server powered by dockerized services"
 [extra]
@@ -8,17 +8,24 @@ insert_anchor_links = "none"
 icon = "docker"
 +++
 
-## What is the website about?
-I wanted to present myself better to the world, have a place where I could keep track of the things I do, and learn something new. These are the main motivations behind this website.
+## Old laptop, let's use it
+The project came to my mind after discovering the existence of media-serving solutions like Plex and Jellyfin. I was also interested in polishing my skills in using Docker containers, so I picked up my old laptop and started playing.
 
-I started working on it in late July 2023, with the goal of putting the site online in a few months. I have to say that more than "few months" passed, mainly because of the never-ending tweaks to the user interface. There are obviously still things I want to improve, but I would say this is enough for now.
+## Docker? Containers?
+For those who don't know what I am talking about, _Docker is an open source platform that enables developers to build, deploy, run, update and manage containers, standardized and executable components that combine application source code with the operating system (OS) libraries and dependencies required to run that code in any environment._ With cooler words, you can summarize the previous statement with _Develop once, deploy everywhere._ 
 
-I chose English as the main language of the blog to get some practice with the language every now and then.
+The awesome thing about [Docker](https://www.docker.com/) is that it allows to easily deploy services (containers) in a matter of seconds. To make you understand the potential of what I am talking about, the following snippet shows how to start a bash session in container based on the Ubuntu image. Yes, Virtual Machines have been already invented, but this is FAST.
 
-## How it was made
-The website was developed using [Zola](https://www.getzola.org/), a simple framework that resembles the look of classic HTML. The *blog* sections is there to keep track of my projects in a nice and fancy way. The "posts" are not intended to be tutorials; they are just cool things I was interested in and that I explored.
+```
+ubuntu@victus:~$ docker run -it ubuntu /bin/bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+bccd10f490ab: Pull complete
+Digest: sha256:77906da86b60585ce12215807090eb327e7386c8fafb5402369e421f44eff17e
+Status: Downloaded newer image for ubuntu:latest
+root@062f46837057:/#
+```
 
-The website was deployed using [Netlify](https://www.netlify.com/), a service where you can easily host your website. The platform offers you 100 GB of free bandwidth per month. It can be easily integrated with standard versioning providers like Git. It also offers the possibility of setting a custom domain name for your website. I bought mine on [Porkbun](https://porkbun.com/) for around 10 euros a year.
+There are a ton of open-source Docker Images, you can have a look at [Docker Hub](https://hub.docker.com/) if you are curious. Enough for the introduction, let's get to something more real.
 
-## Want to try it yourself?
-Before you start working, I would suggest that you understand how and where you want to host your website. Not all providers are free, and choosing the right one for the framework you want to use can easily save you a lot of money. If you would like to develop something similar to what I built, the [Zola themes section](https://www.getzola.org/themes/) has hundreds of templates that can be taken as a starting point. If you want to start from my website, feel free to fork my [GitHub repository](https://github.com/nicolamarchiotto/k8-zola-blog).
+## System
