@@ -35,14 +35,12 @@ Following this line of thought, lots of open-source Docker Images were developed
 
 The pc I am using is my first laptop, which retired after 5 stressful long years of University. It is equipped with an Intel i5 8th gen processor, 8 GB of ram DDR4, an SSD of 128 GB and HHD of 1 TB. These are more than enough requirements if you are planning of just serving your medias or backing your photos. The system has also an onboard low-end GPU, which I did not bother neither to disable from the BIOS nor to remove it. After setting up the OS and installing an ssh server, I removed the laptop screen, to reduce the system power consumption and to make it as less invasive as possible. I set up a static IP, placed the sever near my home modem/router and connect it via an Ethernet cable.
 
-<div class="flex" style="margin-top: -20px; margin-bottom: -20px;">
-    <div style="padding: 10px;" width="50%" >
+<div class="flex flex-col md:flex-row" style="margin-top: -20px; margin-bottom: -20px;">
+    <div style="padding: 5px;" >
         <img src="server1e.jpeg" alt="Server 1">
-        <!-- <p style="margin-top: -20px;">Server image 1</p> -->
     </div>
-    <div width="50%" style="padding: 10px;">
+    <div style="padding: 5px;">
         <img src="server2e.jpeg" alt="Server 2">  
-        <!-- <p></p> -->
     </div>
 </div>
 
