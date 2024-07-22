@@ -12,9 +12,16 @@ icon = "docker"
 The project came to my mind after discovering the existence of media-serving solutions like Plex or Jellyfin. I was also interested in polishing my skills on Docker containers, so I picked up my old laptop, the chosen "_server_", and started playing.
 
 ## Docker? Containers?
-For those who don't know what I am talking about, _Docker is an open source platform that enables developers to build, deploy, run, update and manage containers, standardized and executable components that combine application source code with the operating system (OS) libraries and dependencies required to run that code in any environment._ With cooler words, you can summarize the previous statement with _Develop faster, run everywhere._ 
+For those who don't know what I am talking about, _Docker is an open source platform that enables developers to build, deploy, run, update and manage containers, standardized and executable components that combine application source code with the operating system (OS) libraries and dependencies required to run that code in any environment._ 
 
-Another awesome thing about [Docker](https://www.docker.com/) lies in its ease of use. To make you understand the potential of what I am talking about, the following snippet shows how to start a bash session in container based on the Ubuntu image. Yes, Virtual Machines have been already invented, but this is way FASTER.
+With less fancy words, Docker allows you to build your program in a standalone and secure environment. And whene I say environment, I also mean the operating system and all the software dependencies you want. This transaltes to: 
+
+- Easily distributable software
+- Assurance of the host machine setup. With Docker you will never hear again _"but it works on my machine"_
+
+With respect to Virtual Machines, which are tricked by the hypervisor layer to run on real hardware, Docker containers are more friendly with the host and just emulate a minimal file system, they need less time to startup and are tipically faster.
+
+[Docker](https://www.docker.com/) is also incredibly easy to use. To make you understand the potential of what I am talking about, the following snippet shows how to start a bash session in container based on the Ubuntu image. And to start the container, only 10 seconds were necessary!
 
 ```
 ubuntu@victus:~$ docker run -it ubuntu /bin/bash
@@ -26,10 +33,13 @@ Status: Downloaded newer image for ubuntu:latest
 root@062f46837057:/#
 ```
 
-A container based on an Ubuntu image may not sound so revolutionary. But on top of this image you could add other software components, from a simple python application to whole frontend/backend solutions. From this, you then could make your own personalized Docker image, with all the necessary dependencies already declared inside it.
-You have now acquired a tool which allows you to easily distribute your application, with the only requirement that the system must host a Docker engine. 
+A container based on an Ubuntu may not sound so revolutionary. But on top of this image you could add other software components, from a simple python application to whole frontend/backend solutions. From this you could then create your own personalized Docker image and distribute it, with the only requirement that the system must host the Docker engine. 
 
-Following this line of thought, lots of open-source Docker Images were developed. You can have a look at some of them at [Docker Hub](https://hub.docker.com/) if you are curious. Enough for the introduction, let's get to something more concrete.
+Following this line of thought, lots of open-source Docker Images were developed. You can have a look at some of them at [Docker Hub](https://hub.docker.com/) if you are curious. 
+
+The most mind-blowing project I found is [dockur/windows](https://github.com/dockur/windows), which allows you to host Windows (from XP to W11) inside a container in legal way and automazing the installation process. It saved me when I needed to configure old IT hardware with a software tool compatible only with Windows XP. 
+
+Enough for the introduction, let's get to something more concrete.
 
 ## System
 
