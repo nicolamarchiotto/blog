@@ -8,10 +8,10 @@ insert_anchor_links = "none"
 icon = "docker"
 +++
 
-## Old laptop, let's use it
+# Old laptop, let's use it
 The project came to my mind after discovering the existence of media-serving solutions like Plex or Jellyfin. I was also interested in polishing my skills on Docker containers, so I picked up my old laptop, the chosen "_server_", and started playing.
 
-## Docker? Containers?
+# Docker? Containers?
 For those who don't know what I am talking about, _Docker is an open source platform that enables developers to build, deploy, run, update and manage containers, standardized and executable components that combine application source code with the operating system (OS) libraries and dependencies required to run that code in any environment._ 
 
 With less fancy words, Docker allows you to build your program in a standalone and secure environment. And whene I say environment, I also mean the operating system and all the software dependencies you want. This transaltes to: 
@@ -41,9 +41,9 @@ The most mind-blowing project I found is [dockur/windows](https://github.com/doc
 
 Enough for the introduction, let's get to something more concrete.
 
-## System
+# System
 
-The pc I am using is my first laptop, which retired after 5 stressful long years of University. It is equipped with an Intel i5 8th gen processor, 8 GB of ram DDR4, an SSD of 128 GB and HHD of 1 TB. These are more than enough requirements if you are planning of just serving your medias or backup your photos. The system has also an onboard low-end GPU, which I did not bother neither to disable from the BIOS nor to remove it. After setting up the OS and installing an ssh server, I removed the laptop screen, to reduce the system power consumption and to make it as less invasive as possible. I set up a static IP, placed the sever near my home modem/router and connect it via an Ethernet cable.
+The pc I am using is my first laptop, which retired after 5 stressful long years of Computer Science University. It is equipped with an Intel i5 8th gen processor, 8 GB of ram DDR4, an SSD of 128 GB and HHD of 1 TB. The system has also an onboard low-end GPU, which I did not bother neither to disable from the BIOS nor to remove it. After setting up the OS and installing an ssh server, I removed the laptop screen, to reduce the system power consumption and to make it as less invasive as possible. I set up a static IP, placed the sever near my home modem/router and connect it via an Ethernet cable.
 
 <div class="flex flex-col md:flex-row" style="margin-top: -20px; margin-bottom: -20px;">
     <div style="padding: 5px;" >
@@ -54,7 +54,7 @@ The pc I am using is my first laptop, which retired after 5 stressful long years
     </div>
 </div>
 
-## Installation
+# Installation
 
 The system runs on a Debian server image. I don't need the system to run 24/7 since I mainly use it when I am home at night. The only automation I implemented is the system automatic shutdown scheduled for 01:30 AM.
 
@@ -68,16 +68,20 @@ You can find the setup script on my [GitHub repo](https://github.com/nicolamarch
 
 # Services
 
-The server host a discrete number of applications, I'll quickly list some of them 
+The server host a discrete number of applications, I'll quickly list them 
 
 ### Jellyfin
-[Jellyfin](https://jellyfin.org/) is a media serving solution. It allows you to share your media over the network. I use it to watch the shows and films on my server on my tv
+[Jellyfin](https://jellyfin.org/) is a media serving solution. It allows you to share your media over the network
 ### FileBrowser
 [Filebrowser](https://filebrowser.org/) is exactly what you expect, a file explorer on the system which expose a web-UI to perform file-management operations.
 ### Photoprism
 [Photoprism](https://www.photoprism.app/) is an app which allows you to easily manage and organize your photos. I use it to back up all my phone photos exploiting the smartphone app [Photosync](https://www.photosync-app.com/home) and the compatible synchronization via WebDAV.
+### qBitTorrent
+Torrent client to download whatever you want
 ### Homer
 [Homer](https://github.com/bastienwirtz/homer) is a simple app developed by [bastienwirtz](https://github.com/bastienwirtz) which allows you to access your server services from a single page
+### Sonarr and Radarr
+[Sonarr](https://sonarr.tv/) and [Radarr](https://radarr.video/) are two apps for respectively manage tv-shows and movies.
 
 
 <div class="container">
@@ -108,3 +112,16 @@ The server host a discrete number of applications, I'll quickly list some of the
     </a>
   </div>
 </div>
+
+# Perfomance
+
+Sometimes Jellyfin struggles to serve some media files, thus resulting in a stuttering video. This occured to me maybe twice since I setup the system one year ago, so nothing too impactfull. Apart from this I never had major problems.
+
+# Would be nice things to do
+
+There are other things I would like to add on a future version of my server
+
+- Set the system in a raid configuration
+- Expose the system to the world in a safe way and:
+  - Integrate a file sharing solution i.e. [Nextcloud](https://nextcloud.com/it/)
+  - Host a [Bitwarden](https://bitwarden.com/) instance 
