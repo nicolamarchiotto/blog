@@ -14,9 +14,9 @@ The project came to my mind after discovering the existence of media-serving sol
 # Docker? Containers?
 For those who don't know what I am talking about, _Docker is an open source platform that enables developers to build, deploy, run, update and manage containers, standardized and executable components that combine application source code with the operating system (OS) libraries and dependencies required to run that code in any environment._ 
 
-With less fancy words, Docker allows you to build your program in a standalone and secure environment. And whene I say environment, I also mean the operating system and all the software dependencies you want. This transaltes to: 
+With less fancy words, Docker allows you to build your program in a standalone and secure environment. And when I say environment, I also mean the operating system and all the software dependencies you want. This translates to: 
 
-- Easily distributable software
+- Easily distribute software
 - Assurance of the host machine setup. With Docker you will never hear again _"but it works on my machine"_
 
 With respect to Virtual Machines, which are tricked by the hypervisor layer to run on real hardware, Docker containers are more friendly with the host and just emulate a minimal file system, they need less time to startup and are typically faster.
@@ -37,7 +37,7 @@ A container based on an Ubuntu may not sound so revolutionary. But on top of thi
 
 Following this line of thought, lots of open-source Docker Images were developed. You can have a look at some of them at [Docker Hub](https://hub.docker.com/) if you are curious. 
 
-The most mind-blowing project I found is [dockur/windows](https://github.com/dockur/windows), which allows you to host Windows (from XP to W11) inside a container in legal way and automazing the installation process. It saved me when I needed to configure old IT hardware with a software tool compatible only with Windows XP. 
+The most mind-blowing project I found is [dockur/windows](https://github.com/dockur/windows), which allows you to host Windows (from XP to W11) inside a container in legal way and automating the installation process. It saved me when I needed to configure old IT hardware with a software tool compatible only with Windows XP. 
 
 Enough for the introduction, let's get to something more concrete.
 
@@ -81,7 +81,7 @@ Torrent client to download whatever you want
 ### Homer
 [Homer](https://github.com/bastienwirtz/homer) is a simple app developed by [bastienwirtz](https://github.com/bastienwirtz) which allows you to access your server services from a single page
 ### Sonarr and Radarr
-[Sonarr](https://sonarr.tv/) and [Radarr](https://radarr.video/) are two apps for respectively manage tv-shows and movies.
+[Sonarr](https://sonarr.tv/) and [Radarr](https://radarr.video/) are two apps for respectively manage shows and movies.
 
 
 <div class="container">
@@ -115,13 +115,13 @@ Torrent client to download whatever you want
 
 # Perfomance
 
-Sometimes Jellyfin struggles to serve some media files, thus resulting in a stuttering video. This occured to me maybe twice since I setup the system one year ago, so nothing too impactfull. Apart from this I never had major problems.
+Sometimes Jellyfin struggles to serve some media files, thus resulting in a stuttering video. This occurred to me maybe twice since I set up the system one year ago, so nothing too impactful. Apart from this I never had major problems.
 
 # Would be nice things to do
 
 There are other things I would like to add on a future version of my server
 
 - Set the system in a raid configuration
-- Expose the system to the world in a safe way and:
+- Expose the system to the world safely and:
   - Integrate a file sharing solution i.e. [Nextcloud](https://nextcloud.com/it/)
   - Host a [Bitwarden](https://bitwarden.com/) instance 
