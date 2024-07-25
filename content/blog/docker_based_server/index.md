@@ -19,7 +19,7 @@ With less fancy words, Docker allows you to build your program in a standalone a
 - Easily distributable software
 - Assurance of the host machine setup. With Docker you will never hear again _"but it works on my machine"_
 
-With respect to Virtual Machines, which are tricked by the hypervisor layer to run on real hardware, Docker containers are more friendly with the host and just emulate a minimal file system, they need less time to startup and are tipically faster.
+With respect to Virtual Machines, which are tricked by the hypervisor layer to run on real hardware, Docker containers are more friendly with the host and just emulate a minimal file system, they need less time to startup and are typically faster.
 
 [Docker](https://www.docker.com/) is also incredibly easy to use. To make you understand the potential of what I am talking about, the following snippet shows how to start a bash session in container based on the Ubuntu image. And to start the container, only 10 seconds were necessary!
 
