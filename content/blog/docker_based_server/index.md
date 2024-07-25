@@ -56,7 +56,7 @@ The pc I am using is my first laptop, which retired after 5 stressful long years
 
 # Installation
 
-The system runs on a Debian server image. I don't need the system to run 24/7 since I mainly use it when I am home at night. The only automation I implemented is the system automatic shutdown scheduled for 01:30 AM.
+The system runs on an Ubuntu server image. I don't need the system to run 24/7 since I mainly use it when I am home at night. The only automation I implemented is the system automatic shutdown scheduled for 01:30 AM.
 
 The services hosted by the server were all installed using Docker. To make things maintainable, I created a script which automatically set up the system by:
 
