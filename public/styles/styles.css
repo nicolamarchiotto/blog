@@ -2133,28 +2133,22 @@ a.stretched {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 15%;
+  width: 10%;
   font-size: 20px;
   color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  background-color: rgba(0, 0, 0, 0);
-  filter: alpha(opacity=50);
-  opacity: .5
+  text-decoration: none;
 }
 
 .carousel-control.left {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-  background-repeat: repeat-x
+  text-align: left;
+  padding-left: 2%;
 }
 
 .carousel-control.right {
   right: 0;
   left: auto;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-  background-repeat: repeat-x
+  text-align: right;
+  padding-right: 2%;
 }
 
 .carousel-control:focus,
@@ -2162,8 +2156,6 @@ a.stretched {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  filter: alpha(opacity=90);
-  opacity: .9
 }
 
 .carousel-control .glyphicon-chevron-left,
@@ -2198,7 +2190,7 @@ a.stretched {
 }
 
 .carousel-control .icon-prev:before {
-  content: "\2039"
+  content: "\2039";
 }
 
 .carousel-control .icon-next:before {
@@ -2262,7 +2254,7 @@ a.stretched {
     width: 30px;
     height: 30px;
     margin-top: -10px;
-    font-size: 30px
+    font-size: 30px;
   }
 
   .carousel-control .glyphicon-chevron-left,
