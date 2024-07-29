@@ -202,8 +202,6 @@ a.stretched {
 .noSelect:focus {
     outline: none !important;
 }
-
-
 .carousel {
   position: relative
 }
@@ -360,7 +358,8 @@ a.stretched {
   width: 20px;
   height: 20px;
   font-family: serif;
-  line-height: 1
+  line-height: 1;
+  font-size: xx-large
 }
 
 .carousel-control .icon-prev:before {
@@ -368,7 +367,7 @@ a.stretched {
 }
 
 .carousel-control .icon-next:before {
-  content: "\203a"
+  content: "\203a";
 }
 
 .carousel-indicators {
@@ -385,22 +384,23 @@ a.stretched {
 
 .carousel-indicators li {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #fff;
-  border-radius: 10px
+  background-color: #cdcfd1;
+  border: 1px solid #000;
+  border-radius: 8px
 }
 
 .carousel-indicators .active {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   margin: 0;
-  background-color: #fff
+  background-color: #fff;
+
+
 }
 
 .carousel-caption {
@@ -419,6 +419,26 @@ a.stretched {
 .carousel-caption .btn {
   text-shadow: none
 }
+
+.double-image-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.bordered-image {
+  border-radius: 10px;
+}
+
+.double-image-left-div {
+  margin-top: -30px;
+  margin-bottom: -25px;
+}
+
+.double-image-right-div {
+  margin-top: -25px;
+  margin-bottom: -30px;
+}
+
 
 @media screen and (min-width:768px) {
 
@@ -451,4 +471,23 @@ a.stretched {
   .carousel-indicators {
       bottom: 20px
   }
+
+  .double-image-div {
+    flex-direction: row;
+  }
+
+  .double-image-left-div {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+  
+  .double-image-right-div {
+    padding-left: 4px;
+    padding-right: 4px; 
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+
 }

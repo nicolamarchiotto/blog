@@ -5,8 +5,11 @@
 <title>{% if section -%}{{ section.title }} | {% endif %} {{ config.title }}</title>
 {% endblock title -%}
 
+
+
+
 {% block content %}
-<div class="container max-w-8xl mx-auto bg-white px-4 pt-8 pb-28 lg:pb-8 shadow-lg min-h-full">
+<div class="container max-w-8xl mx-auto bg-white px-3 pt-8 pb-28 lg:pb-8 shadow-lg min-h-full">
   <div class="flex flex-col-reverse xl:flex-row">
     <h1 class="grow font-bold font-sans break-normal text-gray-900 text-3xl">{{ page.title }}</h1>
     {% if page.date %}<p class="text-sm md:text-base font-normal text-gray-600 py-2">{{ page.date }}</p>{% endif %}

@@ -45,12 +45,12 @@ Enough for the introduction, let's get to something more concrete.
 
 The pc I am using is my first laptop, which retired after 5 stressful long years of Computer Science University. It is equipped with an Intel i5 8th gen processor, 8 GB of ram DDR4, an SSD of 128 GB and HHD of 1 TB. The system has also an onboard low-end GPU, which I did not bother neither to disable from the BIOS nor to remove it. After setting up the OS and installing an ssh server, I removed the laptop screen, to reduce the system power consumption and to make it as less invasive as possible. I set up a static IP, placed the sever near my home modem/router and connect it via an Ethernet cable.
 
-<div class="flex flex-col md:flex-row" style="margin-top: -10px; margin-bottom: -10px;">
-    <div class="md:p-0 p-2" >
-        <img src="server1e.jpeg" alt="Server 1">
+<div class="double-image-div">
+    <div class="double-image-left-div">
+        <img src="server1e.jpeg" alt="Server 1" class="bordered-image">
     </div>
-    <div class="md:p-0 p-2">
-        <img src="server2e.jpeg" alt="Server 2">  
+    <div class="double-image-right-div">
+        <img src="server2e.jpeg" alt="Server 2" class="bordered-image">  
     </div>
 </div>
 
@@ -87,21 +87,21 @@ The server host a discrete number of applications, I'll quickly list them
     </ol>
     <div class="carousel-inner">
       <div class="item active">
-        <img src="server1e.jpeg" alt="Los Angeles" style="width:100%;">
+        <img src="server1e.jpeg" alt="Los Angeles" style="width:100%;" class="bordered-image">
       </div>
       <div class="item">
-        <img src="server1e.jpeg" alt="Chicago" style="width:100%;">
+        <img src="server1e.jpeg" alt="Chicago" style="width:100%;" class="bordered-image">
       </div>
       <div class="item">
-        <img src="server1e.jpeg" alt="New york" style="width:100%;">
+        <img src="server1e.jpeg" alt="New york" style="width:100%;" class="bordered-image">
       </div>
     </div>
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <div class="icon-prev">
+      <div class="icon-prev" style="color: white; -webkit-text-stroke: 1px #000;">
       </div>
     </a>
     <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <div class="icon-next">
+      <div class="icon-next" style="color: white; -webkit-text-stroke: 1px #000;">
       </div>
     </a>
   </div>
@@ -116,6 +116,4 @@ Sometimes Jellyfin struggles to serve some media files, thus resulting in a stut
 There are other things I would like to add on a future version of my server
 
 - Set the system in a raid configuration
-- Expose the system to the world safely and:
-  - Integrate a file sharing solution i.e. [Nextcloud](https://nextcloud.com/it/)
-  - Host a [Bitwarden](https://bitwarden.com/) instance 
+- Expose the system to the world safely for hosting a file sharing solution, i.e. [Nextcloud](https://nextcloud.com/it/), and have a local instance of [Bitwarden](https://bitwarden.com/), the password manager I currently use
