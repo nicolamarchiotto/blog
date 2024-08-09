@@ -1,3 +1,10 @@
+# Install
+
+Windows install instructions
+
+- choco install packages.config
+- npm install
+
 # myBlog
 
 Website built using [Zola](https://www.getzola.org/)
