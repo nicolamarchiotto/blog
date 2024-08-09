@@ -1,29 +1,32 @@
-# Install
+# Zola Blog
+
+My personal website built using [Zola](https://www.getzola.org/) based on [kodama-theme](https://github.com/adfaure/kodama-theme)
+
+## Install
 
 Windows install instructions
 
-- choco install packages.config
-- npm install
+- `choco install packages.config`
+- `npm install`
 
-# myBlog
+## Run
 
-Website built using [Zola](https://www.getzola.org/)
+- `zola serve` 
 
-`zola serve` to launch localhost webserver on `localhost:1111`
+## Run and serve website on local network
 
-Startup theme used: [kodama-theme](https://github.com/adfaure/kodama-theme)
+- `zola serve --interface 0.0.0.0 --base-url {your_ip}`
 
-Styles can be modified and applied automatically using `npm run watch`
+## Tailwind style
 
-Edit on the tailwind styles does not always apply automatically, to force them run
+kodama theme reports: Styles can be modified and applied automatically using `npm run watch`
+
+My experience: Editing the tailwind styles does not always apply automatically, to force them run
 
 `npx tailwindcss -i styles/styles.css -o static/styles/styles.css`
 
-To be able to reach your zola website from inside your network and automatically serve it
-
-`zola serve --interface 0.0.0.0 --base-url {your_ip}`
-
 ## Helpfull links
+
 https://www.maybevain.com/writing/using-tailwind-css-with-zola-static-site-generator/
 
 https://github.com/tailwindlabs/tailwindcss/discussions/2854

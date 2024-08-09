@@ -3,3 +3,4 @@ themes
 package-lock.json
 public
 TODO.md
+.cache
