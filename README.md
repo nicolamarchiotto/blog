@@ -4,7 +4,7 @@ My personal website built using [Zola](https://www.getzola.org/) based on [kodam
 
 ## Install
 
-Windows install instructions
+Windows install instructions using [Chocolatey](https://docs.chocolatey.org/en-us/)
 
 - `choco install packages.config`
 - `npm install`
