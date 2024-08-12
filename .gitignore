@@ -3,3 +3,6 @@ themes
 package-lock.json
 public
 TODO.md
+.vscode
+.cacahe
+.resources
