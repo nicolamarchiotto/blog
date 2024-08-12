@@ -2055,7 +2055,7 @@ a.stretched {
 .carousel-inner>.item {
   position: relative;
   display: none;
-  transition: .6s ease-in-out left
+  transition: .6s ease-in-out left;
 }
 
 .carousel-inner>.item>a>img,
@@ -2187,7 +2187,8 @@ a.stretched {
   height: 20px;
   font-family: serif;
   line-height: 1;
-  font-size: xx-large
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .carousel-control .icon-prev:before {
@@ -2219,14 +2220,16 @@ a.stretched {
   cursor: pointer;
   background-color: #cdcfd1;
   border: 1px solid #000;
-  border-radius: 8px
+  border-radius: 10px
 }
 
 .carousel-indicators .active {
-  width: 10px;
-  height: 10px;
-  margin: 0;
+  width: 9px;
+  height: 9px;
+  margin: 1;
+  margin-bottom: 2;
   background-color: #fff;
+  border-radius: 10px
 }
 
 .carousel-caption {
@@ -2270,20 +2273,20 @@ a.stretched {
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next,
   .carousel-control .icon-prev {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin-top: -10px;
-    font-size: 30px;
+    font-size: 50px;
   }
 
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .icon-prev {
-    margin-left: -10px
+    margin-left: -30px
   }
 
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next {
-    margin-right: -10px
+    margin-right: -30px
   }
 
   .carousel-caption {

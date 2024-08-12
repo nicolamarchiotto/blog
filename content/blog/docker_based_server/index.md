@@ -76,24 +76,41 @@ The server host a discrete number of applications, I'll quickly list them
 - [qBittorrent](https://www.qbittorrent.org/download) Torrent client to download whatever you want
 - [Homer](https://github.com/bastienwirtz/homer) is a simple app developed by [bastienwirtz](https://github.com/bastienwirtz) which allows you to access your server services from a single page
 - [Sonarr](https://sonarr.tv/) and [Radarr](https://radarr.video/) are two apps for respectively manage shows and movies.
+- [Pi-hole](https://pi-hole.net/) is a local dns server.
 
 
 <div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
     </ol>
     <div class="carousel-inner">
       <div class="item active">
-        <img src="server1e.jpeg" alt="Los Angeles" style="width:100%;" class="bordered-image">
+        <img src="01e.png" alt="Los Angeles" style="width:100%;" class="bordered-image">
       </div>
       <div class="item">
-        <img src="server1e.jpeg" alt="Chicago" style="width:100%;" class="bordered-image">
+        <img src="02e.png" alt="Chicago" style="width:100%" class="bordered-image">
       </div>
       <div class="item">
-        <img src="server1e.jpeg" alt="New york" style="width:100%;" class="bordered-image">
+        <img src="03e.png" alt="New york" style="width:100%;" class="bordered-image">
+      </div>
+      <div class="item">
+        <img src="04e.png" alt="New york" style="width:100%;" class="bordered-image">
+      </div>
+      <div class="item">
+        <img src="05e.png" alt="New york" style="width:100%;" class="bordered-image">
+      </div>
+      <div class="item">
+        <img src="06e.png" alt="New york" style="width:100%;" class="bordered-image">
+      </div>
+      <div class="item">
+        <img src="07e.png" alt="New york" style="width:100%;" class="bordered-image">
       </div>
     </div>
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
