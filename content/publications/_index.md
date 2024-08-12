@@ -1,5 +1,4 @@
 +++
-date = 2020-07-09
 title = "Publications"
 sort_by = "date"
 template = "publications.html"
