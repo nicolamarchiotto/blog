@@ -1,2 +1,0 @@
-{"rule":"DOUBLE_NEGATIVE","sentence":"^\\QThe system has also an onboard low-end GPU, which I did not bother neither to disable from the BIOS or to remove it.\\E$"}
-{"rule":"DOUBLE_NEGATIVE","sentence":"^\\QThe system has also an onboard low-end GPU, which I did not bother neither to disable from the BIOS nor to remove it.\\E$"}
