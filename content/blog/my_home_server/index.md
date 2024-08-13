@@ -47,10 +47,14 @@ The pc I am using is my first laptop, which retired after 5 stressful long years
 
 <div class="double-image-div">
     <div class="double-image-left-div">
-        <img src="08e.jpeg" alt="Server 1" class="fullscreen-image-click">
+        <a href="08e.png" target="_blank" rel="noopener noreferrer">
+          <img src="08e.jpeg" alt="Server 1" class="fullscreen-image-click">
+        </a>
     </div>
     <div class="double-image-right-div">
-        <img src="09e.jpeg" alt="Server 2" class="fullscreen-image-click">  
+        <a href="09e.png" target="_blank" rel="noopener noreferrer">
+          <img src="09e.jpeg" alt="Server 2" class="fullscreen-image-click">  
+        <a>
     </div>
 </div>
 
@@ -91,25 +95,39 @@ The server hosts a discrete number of applications. I'll quickly list them:
     </ol>
     <div class="carousel-inner">
       <div class="item active">
-        <img class="fullscreen-image-click" src="01e.png" alt="Image" style="width:100%;" class="bordered-image">
+        <a href="01e.png" target="_blank" rel="noopener noreferrer">
+          <img class="fullscreen-image-click" src="01e.png" alt="Image" style="width:100%;" class="bordered-image">
+        </a>
       </div>
       <div class="item">
-        <img class="fullscreen-image-click" src="02e.png" alt="Image" style="width:100%" class="bordered-image">
+        <a href="02e.png" target="_blank" rel="noopener noreferrer">
+          <img class="fullscreen-image-click" src="02e.png" alt="Image" style="width:100%" class="bordered-image">
+        </a>
       </div>
       <div class="item">
-        <img class="fullscreen-image-click" src="03e.png" alt="Image" style="width:100%;" class="bordered-image">
+        <a href="03e.png" target="_blank" rel="noopener noreferrer">
+          <img class="fullscreen-image-click" src="03e.png" alt="Image" style="width:100%;" class="bordered-image">
+        </a>
       </div>
       <div class="item">
-        <img class="fullscreen-image-click" src="04e.png" alt="Image" style="width:100%;" class="bordered-image">
+        <a href="04e.png" target="_blank" rel="noopener noreferrer">
+          <img class="fullscreen-image-click" src="04e.png" alt="Image" style="width:100%;" class="bordered-image">
+        </a>
       </div>
       <div class="item">
-        <img class="fullscreen-image-click" src="05e.png" alt="Image" style="width:100%;" class="bordered-image">
+        <a href="05e.png" target="_blank" rel="noopener noreferrer">
+          <img class="fullscreen-image-click" src="05e.png" alt="Image" style="width:100%;" class="bordered-image">
+        </a>
       </div>
       <div class="item">
-        <img class="fullscreen-image-click" src="06e.png" alt="Image" style="width:100%;" class="bordered-image">
+        <a href="06e.png" target="_blank" rel="noopener noreferrer">
+          <img class="fullscreen-image-click" src="06e.png" alt="Image" style="width:100%;" class="bordered-image">
+        </a>
       </div>
       <div class="item">
-        <img class="fullscreen-image-click" src="07e.png" alt="Image" style="width:100%;" class="bordered-image">
+        <a href="07e.png" target="_blank" rel="noopener noreferrer">
+          <img class="fullscreen-image-click" src="07e.png" alt="Image" style="width:100%;" class="bordered-image">
+        </a>
       </div>
     </div>
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
