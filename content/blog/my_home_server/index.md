@@ -43,18 +43,14 @@ Enough for the introduction, let's get to the server.
 
 ## System
 
-The pc I am using is my first laptop, which retired after 5 stressful long years of Computer Science University. It is equipped with an Intel i5 8th gen processor, 8 GB of ram DDR4, an SSD of 128 GB and HHD of 1 TB. After setting up the OS and installing an ssh server, I removed the laptop screen, to reduce the system power consumption and to make it as less invasive as possible. I set up a static IP, placed the sever near my home modem/router and connect it via Ethernet cable.
+The pc I am using is my first laptop, which retired after 5 stressful long years of Computer Science University. It is equipped with an Intel i5 8th gen processor, 8 GB of ram DDR4, an SSD of 128 GB and HHD of 1 TB. After setting up the OS and installing an ssh server, I removed the laptop screen, to reduce the system power consumption and to make it as less invasive as possible. I set up a static IP, placed the sever near my home modem-router and connect it via Ethernet cable.
 
 <div class="double-image-div">
-    <div class="double-image-left-div">
-        <a href="08e.png" target="_blank" rel="noopener noreferrer">
-          <img src="08e.jpeg" alt="Server 1" class="fullscreen-image-click">
-        </a>
+    <div class="image-overlay double-image-left-div">
+        <img src="08e.jpeg" alt="Server 1" class="overlay-image">
     </div>
-    <div class="double-image-right-div">
-        <a href="09e.png" target="_blank" rel="noopener noreferrer">
-          <img src="09e.jpeg" alt="Server 2" class="fullscreen-image-click">  
-        <a>
+    <div class="image-overlay double-image-right-div">
+        <img src="09e.jpeg" alt="Server 2" class="overlay-image">  
     </div>
 </div>
 
@@ -94,40 +90,26 @@ The server hosts a discrete number of applications. I'll quickly list them:
       <li data-target="#myCarousel" data-slide-to="6"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="item active">
-        <a href="01e.png" target="_blank" rel="noopener noreferrer">
-          <img class="fullscreen-image-click" src="01e.png" alt="Image" style="width:100%;" class="bordered-image">
-        </a>
+      <div class="item active image-overlay">
+          <img src="01e.png" alt="Image" class="overlay-image">
       </div>
-      <div class="item">
-        <a href="02e.png" target="_blank" rel="noopener noreferrer">
-          <img class="fullscreen-image-click" src="02e.png" alt="Image" style="width:100%" class="bordered-image">
-        </a>
+      <div class="item image-overlay">
+          <img src="02e.png" alt="Image" class="overlay-image">
       </div>
-      <div class="item">
-        <a href="03e.png" target="_blank" rel="noopener noreferrer">
-          <img class="fullscreen-image-click" src="03e.png" alt="Image" style="width:100%;" class="bordered-image">
-        </a>
+      <div class="item image-overlay">
+          <img src="03e.png" alt="Image" class="overlay-image">
       </div>
-      <div class="item">
-        <a href="04e.png" target="_blank" rel="noopener noreferrer">
-          <img class="fullscreen-image-click" src="04e.png" alt="Image" style="width:100%;" class="bordered-image">
-        </a>
+      <div class="item image-overlay">
+          <img src="04e.png" alt="Image" class="overlay-image">
       </div>
-      <div class="item">
-        <a href="05e.png" target="_blank" rel="noopener noreferrer">
-          <img class="fullscreen-image-click" src="05e.png" alt="Image" style="width:100%;" class="bordered-image">
-        </a>
+      <div class="item image-overlay">
+          <img src="05e.png" alt="Image" class="overlay-image">
       </div>
-      <div class="item">
-        <a href="06e.png" target="_blank" rel="noopener noreferrer">
-          <img class="fullscreen-image-click" src="06e.png" alt="Image" style="width:100%;" class="bordered-image">
-        </a>
+      <div class="item image-overlay">
+          <img src="06e.png" alt="Image" class="overlay-image">
       </div>
-      <div class="item">
-        <a href="07e.png" target="_blank" rel="noopener noreferrer">
-          <img class="fullscreen-image-click" src="07e.png" alt="Image" style="width:100%;" class="bordered-image">
-        </a>
+      <div class="item image-overlay">
+          <img src="07e.png" alt="Image" class="overlay-image">
       </div>
     </div>
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">

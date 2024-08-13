@@ -205,6 +205,26 @@
 
   <script>
     w3IncludeHTML();
+
+    // Overlay images
+    const overlayImages = document.querySelectorAll('.overlay-image');
+    overlayImages.forEach(function(overlayImage) {
+      overlayImage.addEventListener('click', function() {
+        const overlay = document.createElement('div');
+        overlay.classList.add('overlay');
+        overlay.innerHTML = `<img src="${overlayImage.src}" alt="Full Screen Image" class="overlay-image-fullscreen">`;
+
+        document.body.appendChild(overlay);
+        overlay.classList.add('active');
+
+        overlay.addEventListener('click', function() {
+          overlay.classList.remove('active');
+          setTimeout(function() {
+            overlay.remove();
+          }, 300);
+        });
+      });
+    });
   </script>
 
 </body>
