@@ -2268,6 +2268,10 @@ a.stretched {
   margin-bottom: -30px;
 }
 
+.fullscreen-image-click {
+  border-radius: 10px;
+}
+
 @media screen and (min-width:768px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,

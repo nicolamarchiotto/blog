@@ -47,10 +47,10 @@ The pc I am using is my first laptop, which retired after 5 stressful long years
 
 <div class="double-image-div">
     <div class="double-image-left-div">
-        <img src="server1e.jpeg" alt="Server 1" class="bordered-image">
+        <img src="08e.jpeg" alt="Server 1" class="fullscreen-image-click">
     </div>
     <div class="double-image-right-div">
-        <img src="server2e.jpeg" alt="Server 2" class="bordered-image">  
+        <img src="09e.jpeg" alt="Server 2" class="fullscreen-image-click">  
     </div>
 </div>
 
@@ -92,25 +92,25 @@ The server host a discrete number of applications, I'll quickly list them
     </ol>
     <div class="carousel-inner">
       <div class="item active">
-        <img src="01e.png" alt="Los Angeles" style="width:100%;" class="bordered-image">
+        <img class="fullscreen-image-click" src="01e.png" alt="Image" style="width:100%;" class="bordered-image">
       </div>
       <div class="item">
-        <img src="02e.png" alt="Chicago" style="width:100%" class="bordered-image">
+        <img class="fullscreen-image-click" src="02e.png" alt="Image" style="width:100%" class="bordered-image">
       </div>
       <div class="item">
-        <img src="03e.png" alt="New york" style="width:100%;" class="bordered-image">
+        <img class="fullscreen-image-click" src="03e.png" alt="Image" style="width:100%;" class="bordered-image">
       </div>
       <div class="item">
-        <img src="04e.png" alt="New york" style="width:100%;" class="bordered-image">
+        <img class="fullscreen-image-click" src="04e.png" alt="Image" style="width:100%;" class="bordered-image">
       </div>
       <div class="item">
-        <img src="05e.png" alt="New york" style="width:100%;" class="bordered-image">
+        <img class="fullscreen-image-click" src="05e.png" alt="Image" style="width:100%;" class="bordered-image">
       </div>
       <div class="item">
-        <img src="06e.png" alt="New york" style="width:100%;" class="bordered-image">
+        <img class="fullscreen-image-click" src="06e.png" alt="Image" style="width:100%;" class="bordered-image">
       </div>
       <div class="item">
-        <img src="07e.png" alt="New york" style="width:100%;" class="bordered-image">
+        <img class="fullscreen-image-click" src="07e.png" alt="Image" style="width:100%;" class="bordered-image">
       </div>
     </div>
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
