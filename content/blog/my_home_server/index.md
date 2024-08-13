@@ -14,9 +14,9 @@ The project came to my mind after discovering the existence of media-serving sol
 ## Docker? Containers?
 For those who don't know what I am talking about, _Docker is an open source platform that enables developers to build, deploy, run, and manage **containers**, standardized and executable components that combine the application source code, the software dependencies, and the operating system (OS) required to run the application in any environment.
 
-With fewer fancy words, Docker allows you to build your program in a standalone and secure environment with an already integrated OS. This translates to:
+With fewer words, Docker allows you to build your program in a standalone and secure environment with an already integrated OS. This translates to:
 
-- Easily distribute software
+- Easier software distribution;
 - Assurance of the host machine setup. With Docker you will never hear again _"but it works on my machine"_.
 
 With respect to Virtual Machines, which are tricked by the hypervisor layer to run on real hardware, Docker containers are more friendly with the host and just emulate a minimal file system. They need less time to startup and are typically faster.
@@ -35,15 +35,15 @@ root@062f46837057:/#
 
 A container based on an Ubuntu may not sound so revolutionary. But on top of this image you could add other software components, from a simple python application to whole frontend/backend solutions. From this, you could then create your own personalized Docker image and distribute it, with the only requirement that the system must host the Docker engine. 
 
-Following this line of thought, lots of open-source Docker Images were developed. You can take a look at some of them at [Docker Hub](https://hub.docker.com/) if you are curious. 
+Following this line of thought, lots of open-source Docker images were developed. You can take a look at some of them at [Docker Hub](https://hub.docker.com/) if you are curious. 
 
-The most mind-blowing project I found is [dockur/windows](https://github.com/dockur/windows), a Docker image which allows you to host Windows (from XP to W11) inside a container in a legal way and automating the installation process. It saved me when I needed to configure old IT hardware with a software tool compatible only with Windows XP. 
+The most mind-blowing project I found is [dockur/windows](https://github.com/dockur/windows), a Docker image which allows you to host Windows (from XP to W11) inside a container in a legal way using free-trial licenses, and automating the windows tedious installation process. It saved me when I needed to configure some old IT hardware with software compatible only with Windows XP. 
 
 Enough for the introduction, let's get to the server.
 
 ## System
 
-The pc I am using is my first laptop, which retired after 5 stressful long years of Computer Science University. It is equipped with an Intel i5 8th gen processor, 8 GB of ram DDR4, an SSD of 128 GB and HHD of 1 TB. After setting up the OS and installing an ssh server, I removed the laptop screen, to reduce the system power consumption and to make it as less invasive as possible. I set up a static IP, placed the sever near my home modem-router and connect it via Ethernet cable.
+The system I am using is my first laptop, which retired after 5 stressful long years of Computer Science University. It is equipped with an Intel i5 8th gen processor, 8 GB of ram DDR4, an SSD of 128 GB and HHD of 1 TB. After setting up the OS and installing an SSH server, I removed the laptop screen to reduce the system power consumption and to make it as less invasive as possible. I set it up with a static IP, placed the sever near my home modem-router and connect it via Ethernet cable.
 
 <div class="double-image-div">
     <div class="image-overlay double-image-left-div">
@@ -56,13 +56,13 @@ The pc I am using is my first laptop, which retired after 5 stressful long years
 
 ## Installation
 
-The system runs on an Ubuntu server image. I don't need the system to run 24/7 since I mainly use it when I am home at night. The only automation I implemented is the system automatic shutdown scheduled for 01:30 AM.
+The system runs on an Ubuntu server image. I don't need the system to run 24/7 since I mainly use it when I am home at night. The only automation I implemented is the system automatic shutdown scheduled for every day at 01:30 AM.
 
 The services hosted by the server were all installed using Docker. To make things maintainable, I created a script that automatically set up the system by:
 
-* Installing the Docker engine and the SSH server
-* Setting up the system automatic shutdown
-* Installing the services via a [Docker Compose](https://docs.docker.com/compose/) file 
+* Installing the Docker engine and the SSH server;
+* Setting up the system automatic shutdown;
+* Installing the services via a [Docker Compose](https://docs.docker.com/compose/) file.
 
 You can find the setup script on my [GitHub repo](https://github.com/nicolamarchiotto/media-server-script).
 
@@ -70,12 +70,12 @@ You can find the setup script on my [GitHub repo](https://github.com/nicolamarch
 
 The server hosts a discrete number of applications. I'll quickly list them: 
 
-- [Jellyfin](https://jellyfin.org/) is a media serving solution. It allows you to share your media over the network.
-- [Filebrowser](https://filebrowser.org/) is exactly what you expect, a file explorer on the system that exposes a web-UI to perform file-management operations.
-- [Photoprism](https://www.photoprism.app/) is an app that allows you to easily manage and organize your photos. I use it to back up all my phone photos exploiting the mobile app [Photosync](https://www.photosync-app.com/home) and the compatible synchronization via WebDAV.
-- [qBittorrent](https://www.qbittorrent.org/download) Torrent client to download whatever you want
-- [Sonarr](https://sonarr.tv/) and [Radarr](https://radarr.video/) are two apps for respectively managing shows and movies.
-- [Pi-hole](https://pi-hole.net/) is an application that functions both as an ad-blocker for my network and as a local DNS server.
+- [Jellyfin](https://jellyfin.org/) is a media serving solution. It allows you to share your media over the network;
+- [Filebrowser](https://filebrowser.org/) is exactly what you expect, a file explorer on the system that exposes a web-UI to perform file-management operations;
+- [Photoprism](https://www.photoprism.app/) is an app that allows you to easily manage and organize your photos. I use it to back up all my phone photos exploiting the mobile app [Photosync](https://www.photosync-app.com/home) and the compatible synchronization via WebDAV;
+- [qBittorrent](https://www.qbittorrent.org/download) Torrent client to download whatever you want;
+- [Sonarr](https://sonarr.tv/) and [Radarr](https://radarr.video/) are two apps for respectively managing shows and movies;
+- [Pi-hole](https://pi-hole.net/) is an application that functions both as an ad-blocker for my network and as a local DNS server;
 - [Homer](https://github.com/bastienwirtz/homer) is a simple app developed by [bastienwirtz](https://github.com/bastienwirtz) that allows you to access your server services from a single page.
 
 <div>
@@ -131,8 +131,8 @@ Sometimes Jellyfin struggles to serve some media files, thus resulting in a stut
 
 There are other things I would like to add on a future version of the server.
 
-- Set the system in a raid configuration.
-- Expose the system to the world safely for hosting a file sharing solution, i.e., [Nextcloud](https://nextcloud.com/it/), and have a local instance of [Bitwarden](https://bitwarden.com/) and [GitHub](https://github.com/).
+- Set up the system in a raid configuration;
+- Expose the system to the internet safely for hosting a file sharing solution, i.e., [Nextcloud](https://nextcloud.com/it/), and have a local instance of [Bitwarden](https://bitwarden.com/) and [GitHub](https://github.com/).
 
 ## External References
 
