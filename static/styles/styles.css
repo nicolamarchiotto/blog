@@ -1744,11 +1744,6 @@ video {
   font-style: italic;
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .text-blue-200 {
   --tw-text-opacity: 1;
   color: rgb(191 219 254 / var(--tw-text-opacity));
@@ -2183,8 +2178,8 @@ a.stretched {
 
 .carousel-control .icon-next,
 .carousel-control .icon-prev {
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
   font-family: serif;
   line-height: 1;
   font-size: 35px;
