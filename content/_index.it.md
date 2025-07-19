@@ -8,9 +8,16 @@ sort_by = "weight"
 title = ""
 
 [[extra.experience.works]]
+  company = "Prima Power"
+  position = "CAM Engineer"
+  year = "2024-presente"
+  description = "Sviluppatore per il progetto NCExpress Bend, soluzione CAM per le Presse Piegatrici e Pannellatrici Prima Power."
+  skills = ["C++"]
+
+[[extra.experience.works]]
   company = "Exor International"
   position = "Software Engineer"
-  year = "2023-presente"
+  year = "2023-2024"
   description = "Sviluppo di soluzioni per migliorare i processi di controllo qualità nelle linee di produzione dell'azienda. Sviluppo software per macchinari interni, ispezione ottica automatica, applicazioni di Machine Learning, integrazioni software."
   skills = ["ML for Object Detection", "LLM", "Visual Inspection", "Docker", "CoDeSys", " OPC UA", "C++", "Qt"]
 
