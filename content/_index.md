@@ -11,8 +11,8 @@ title = ""
   company = "Prima Power"
   position = "CAM Engineer"
   year = "2024-present"
-  description = "Developer for NCExpress Bend, CAM solution for Prima Power Press Brakes and Panel Benders."
-  skills = ["C++"]
+  description = "Developer for NCExpress, CAM solution for Prima Power Press Brakes and Panel Benders."
+  skills = ["C++", "CAM Development"]
 
 [[extra.experience.works]]
   company = "Exor International"

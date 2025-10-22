@@ -11,8 +11,8 @@ title = ""
   company = "Prima Power"
   position = "CAM Engineer"
   year = "2024-presente"
-  description = "Sviluppatore per il progetto NCExpress Bend, soluzione CAM per le Presse Piegatrici e Pannellatrici Prima Power."
-  skills = ["C++"]
+  description = "Sviluppatore per il progetto NCExpress, soluzione CAM per le Presso Piegatrici e Pannellatrici Prima Power."
+  skills = ["C++", "Sviluppo CAM"]
 
 [[extra.experience.works]]
   company = "Exor International"
