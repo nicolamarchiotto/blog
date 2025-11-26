@@ -40,6 +40,6 @@ https://www.maybevain.com/writing/using-tailwind-css-with-zola-static-site-gener
 
 https://github.com/tailwindlabs/tailwindcss/discussions/2854
 
-# Deploy on github pages doc
+# Deploy on github pages documentation
 
 https://www.getzola.org/documentation/deployment/github-pages/
