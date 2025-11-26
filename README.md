@@ -2,12 +2,21 @@
 
 My personal website built using [Zola](https://www.getzola.org/) based on [kodama-theme](https://github.com/adfaure/kodama-theme)
 
-## Install
+## Windows install
 
-Windows install instructions using [Chocolatey](https://docs.chocolatey.org/en-us/)
+Using [Chocolatey](https://docs.chocolatey.org/en-us/)
 
 - `choco install packages.config`
 - `npm install`
+
+## Linux install
+
+- Get zola package at https://github.com/getzola/zola/releases 
+- untar it: tar -xzf zola-x86_64-unknown-linux-gnu.tar.gz
+- move it in bin folder
+    - sudo mv zola /usr/local/bin/
+    - sudo chmod +x /usr/local/bin/zola
+- test installation: zola --version
 
 ## Run
 
@@ -31,6 +40,6 @@ https://www.maybevain.com/writing/using-tailwind-css-with-zola-static-site-gener
 
 https://github.com/tailwindlabs/tailwindcss/discussions/2854
 
-# deploy on github pages doc
+# Deploy on github pages doc
 
 https://www.getzola.org/documentation/deployment/github-pages/
