@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+<head>
+  <!-- 
+  <link rel="shortcut icon" href="https:&#x2F;&#x2F;nicolamarchiotto.github.io&#x2F;blog&#x2F;processed_images&#x2F;avatar2.0d7486a28067f30b.png" type="image/png">
+  <link rel="icon" href="https:&#x2F;&#x2F;nicolamarchiotto.github.io&#x2F;blog&#x2F;processed_images&#x2F;avatar2.0d7486a28067f30b.png" type="image/png"> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta charset="utf-8">
+
+  <!-- Custom header for users, includes custom css or js here -->
+  <title> Nicola Marchiotto</title>
+
+  
+<!-- CSS -->
+<link rel="stylesheet" href="https://nicolamarchiotto.github.io/blog/styles/styles.css" />
+
+  <title>Blog |  Nicola Marchiotto</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-50 w-screen overflow-hidden h-screen">
+  <!-- Top nav bar -->
+
+  <div class="hidden xl:flex h-[6%] bg-slate-900">
+    
+<nav id="header" class="w-screen h-full shadow-md flex justify-center">
+  <!-- <div id="progress" class="top-0 bg-black max-w-8xl"></div> -->
+  <div class="w-full px-4 bg-blue-800">
+    <div class="max-w-8xl mx-auto container flex sm:flex-nowrap flex-wrap content-center h-full ">
+      <div class="grow sm:grow-0 text-center flex items-center justify-center">
+        <a class="text-white text-3xl font-bold font-sans flex justify-center items-center hover:underline"
+          href="https:&#x2F;&#x2F;nicolamarchiotto.github.io&#x2F;blog">
+          Nicola Marchiotto
+        </a>
+      </div>
+
+      <div
+        class="w-full flex-grow sm:flex sm:items-center flex-wrap sm:flex-nowrap sm:w-auto mt-0 bg-transparent z-20 justify-center"
+        id="nav-content">
+        <ul class="list-reset flex flex-wrap sm:justify-end justify-center flex-1">
+
+          
+          <!-- -->
+          <!-- -->
+          <li class="text-lg">
+            <a href="https://nicolamarchiotto.github.io/blog/publications" class="inline-block text-blue-200 font-bold
+              py-2 px-4 hover:underline">
+              Publications
+            </a>
+          </li>
+          <!-- -->
+          <!-- -->
+          <li class="text-lg">
+            <a href="https://nicolamarchiotto.github.io/blog/blog" class="inline-block py-2 px-4 text-white font-bold
+              ">
+              Blog
+            </a>
+          </li>
+          <!-- -->
+          <li class="text-lg">
+            <a href=https://nicolamarchiotto.github.io/blog class="inline-block
+              text-blue-200 font-bold py-2 px-4 hover:underline">
+              About Me
+            </a>
+          </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    </div>
+
+  <!-- Container -->
+  <!-- h-[100%] lg:h-[93%] -->
+  <div class="px-3 overflow-y-scroll h-[100%] xl:h-[94%]">
+    
+<div class="container max-w-8xl mx-auto bg-white px-3 pt-8 pb-28 lg:pb-8 shadow-lg min-h-full">
+  <div class="flex flex-col-reverse xl:flex-row">
+    <h1 class="grow font-bold font-sans break-normal text-gray-900 text-3xl">My Home Server</h1>
+    <p class="text-sm md:text-base font-normal text-gray-600 py-2">August 2024</p>
+  </div>
+  <hr class="border-b-1 border-gray-400 py-1">
+  <article class="prose prose-indigo max-w-screen-2xl pt-4">
+    
+    <h2 id="old-laptop-let-s-use-it">Old Laptop, Let's Use It</h2>
+<p>The project came to my mind after discovering the existence of media-serving solutions like Plex or Jellyfin. I was also interested in polishing my skills on Docker containers, so I picked up my old laptop, the chosen "<em>server</em>", and started playing.</p>
+<h2 id="docker-containers">Docker? Containers?</h2>
+<p>For those who don't know what I am talking about, _Docker is an open source platform that enables developers to build, deploy, run, and manage <strong>containers</strong>, standardized and executable components that combine the application source code, the software dependencies, and the operating system (OS) required to run the application in any environment.</p>
+<p>With fewer words, Docker allows you to build your program in a standalone and secure environment with an already integrated OS. This translates to:</p>
+<ul>
+<li>Easier software distribution;</li>
+<li>Assurance of the host machine setup. With Docker you will never hear again <em>"but it works on my machine"</em>.</li>
+</ul>
+<p>With respect to Virtual Machines, which are tricked by the hypervisor layer to run on real hardware, Docker containers are more friendly with the host and just emulate a minimal file system. They need less time to startup and are typically faster.</p>
+<p><a href="https://www.docker.com/">Docker</a> is also incredibly easy to use. To make you understand the potential of what I am talking about, the following snippet shows how to start a bash session in a container based on the Ubuntu image. To run it, only 10 seconds were necessary!</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>ubuntu@victus:~$ docker run -it ubuntu /bin/bash
+</span><span>Unable to find image &#39;ubuntu:latest&#39; locally
+</span><span>latest: Pulling from library/ubuntu
+</span><span>bccd10f490ab: Pull complete
+</span><span>Digest: sha256:77906da86b60585ce12215807090eb327e7386c8fafb5402369e421f44eff17e
+</span><span>Status: Downloaded newer image for ubuntu:latest
+</span><span>root@062f46837057:/#
+</span></code></pre>
+<p>A container based on an Ubuntu may not sound so revolutionary. But on top of this image you could add other software components, from a simple python application to whole frontend/backend solutions. From this, you could then create your own personalized Docker image and distribute it, with the only requirement that the system must host the Docker engine.</p>
+<p>Following this line of thought, lots of open-source Docker images were developed. You can take a look at some of them at <a href="https://hub.docker.com/">Docker Hub</a> if you are curious.</p>
+<p>The most mind-blowing project I found is <a href="https://github.com/dockur/windows">dockur/windows</a>, a Docker image which allows you to host Windows (from XP to W11) inside a container in a legal way using free-trial licenses, and automating the windows tedious installation process. It saved me when I needed to configure some old IT hardware with software compatible only with Windows XP.</p>
+<p>Enough for the introduction, let's get to the server.</p>
+<h2 id="system">System</h2>
+<p>The system I am using is my first laptop, which retired after 5 stressful long years of Computer Science University. It is equipped with an Intel i5 8th gen processor, 8 GB of ram DDR4, an SSD of 128 GB and HHD of 1 TB. After setting up the OS and installing an SSH server, I removed the laptop screen to reduce the system power consumption and to make it as less invasive as possible. I set it up with a static IP, placed the sever near my home modem-router and connect it via Ethernet cable.</p>
+<div class="double-image-div">
+    <div class="image-overlay double-image-left-div">
+        <img src="08e.jpeg" alt="Server 1" class="overlay-image">
+    </div>
+    <div class="image-overlay double-image-right-div">
+        <img src="09e.jpeg" alt="Server 2" class="overlay-image">  
+    </div>
+</div>
+<h2 id="installation">Installation</h2>
+<p>The system runs on an Ubuntu server image. I don't need the system to run 24/7 since I mainly use it when I am home at night. The only automation I implemented is the system automatic shutdown scheduled for every day at 01:30 AM.</p>
+<p>The services hosted by the server were all installed using Docker. To make things maintainable, I created a script that automatically set up the system by:</p>
+<ul>
+<li>Installing the Docker engine and the SSH server;</li>
+<li>Setting up the system automatic shutdown;</li>
+<li>Installing the services via a <a href="https://docs.docker.com/compose/">Docker Compose</a> file.</li>
+</ul>
+<p>You can find the setup script on my <a href="https://github.com/nicolamarchiotto/media-server-script">GitHub repo</a>.</p>
+<h2 id="services">Services</h2>
+<p>The server hosts a discrete number of applications. I'll quickly list them:</p>
+<ul>
+<li><a href="https://jellyfin.org/">Jellyfin</a> is a media serving solution. It allows you to share your media over the network;</li>
+<li><a href="https://filebrowser.org/">Filebrowser</a> is exactly what you expect, a file explorer on the system that exposes a web-UI to perform file-management operations;</li>
+<li><a href="https://www.photoprism.app/">Photoprism</a> is an app that allows you to easily manage and organize your photos. I use it to back up all my phone photos exploiting the mobile app <a href="https://www.photosync-app.com/home">Photosync</a> and the compatible synchronization via WebDAV;</li>
+<li><a href="https://www.qbittorrent.org/download">qBittorrent</a> Torrent client to download whatever you want;</li>
+<li><a href="https://sonarr.tv/">Sonarr</a> and <a href="https://radarr.video/">Radarr</a> are two apps for respectively managing shows and movies;</li>
+<li><a href="https://pi-hole.net/">Pi-hole</a> is an application that functions both as an ad-blocker for my network and as a local DNS server;</li>
+<li><a href="https://github.com/bastienwirtz/homer">Homer</a> is a simple app developed by <a href="https://github.com/bastienwirtz">bastienwirtz</a> that allows you to access your server services from a single page.</li>
+</ul>
+<div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active image-overlay">
+          <img src="01e.png" alt="Image" class="overlay-image">
+      </div>
+      <div class="item image-overlay">
+          <img src="02e.png" alt="Image" class="overlay-image">
+      </div>
+      <div class="item image-overlay">
+          <img src="03e.png" alt="Image" class="overlay-image">
+      </div>
+      <div class="item image-overlay">
+          <img src="04e.png" alt="Image" class="overlay-image">
+      </div>
+      <div class="item image-overlay">
+          <img src="05e.png" alt="Image" class="overlay-image">
+      </div>
+      <div class="item image-overlay">
+          <img src="06e.png" alt="Image" class="overlay-image">
+      </div>
+      <div class="item image-overlay">
+          <img src="07e.png" alt="Image" class="overlay-image">
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <div class="icon-prev" style="color: white; -webkit-text-stroke: 1px #000;">
+      </div>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <div class="icon-next" style="color: white; -webkit-text-stroke: 1px #000;">
+      </div>
+    </a>
+  </div>
+</div>
+<h2 id="performance">Performance</h2>
+<p>Sometimes Jellyfin struggles to serve some media files, thus resulting in a stuttering video. This is probably due to the format in which some videos are encoded and to the relative old CPU. This occurred to me maybe twice since I set up the system one year ago, so nothing too impactful. Apart from this, I never had major problems.</p>
+<h2 id="to-do">To Do</h2>
+<p>There are other things I would like to add on a future version of the server.</p>
+<ul>
+<li>Set up the system in a raid configuration;</li>
+<li>Expose the system to the internet safely for hosting a file sharing solution, i.e., <a href="https://nextcloud.com/it/">Nextcloud</a>, and have a local instance of <a href="https://bitwarden.com/">Bitwarden</a> and <a href="https://github.com/">GitHub</a>.</li>
+</ul>
+<h2 id="external-references">External References</h2>
+<ul>
+<li>My <a href="https://github.com/nicolamarchiotto/media-server-script">GitHub repo</a> with the project source code.</li>
+</ul>
+
+    </article>
+</div>
+</div>
+
+  <!-- FAB NAVIGATION NEW  -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <div class="xl:hidden fixed bottom-0 right-0 mr-2 flex flex-col h-fit" x-data="{mobileMenuOpen: false}">
+    <div class="container rounded-full">
+      <button class="bg-blue-600 hover:bg-blue-700 focus:bg-blue-700 text-white font-bold rounded-full"
+        @click="mobileMenuOpen = true" @click.away="mobileMenuOpen = false">
+        <svg class="w-11 h-11  rounded-full" viewBox="-3.36 -3.36 30.72 30.72" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_iconCarrier">
+            <path d="M4 7L7 7M20 7L11 7" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round"></path>
+            <path d="M20 17H17M4 17L13 17" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round"></path>
+            <path d="M4 12H7L20 12" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round"></path>
+          </g>
+        </svg>
+      </button>
+    </div>
+    <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false"
+      x-transition:enter="transition ease-out duration-300" x-transition:enter-start="transform translate-x-full"
+      x-transition:enter-end="transform translate-x-0" x-transition:leave="transition ease-in duration-300"
+      x-transition:leave-start="transform translate-x-0" x-transition:leave-end="transform translate-x-full"
+      class="bottom-0 right-0 absolute " x-cloak>
+      <div class="flex flex-col gap-y-2 mb-[58px] ">
+
+        <div
+          class="rounded-full transition-all w-11 h-11 duration-[0.2s] flex p-2 scale-100 bg-blue-600 hover:bg-blue-700 text-white shadow-lg">
+          <a href="https:&#x2F;&#x2F;nicolamarchiotto.github.io&#x2F;blog">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+            </svg>
+          </a>
+        </div>
+
+        <div
+          class="rounded-full transition-all w-11 h-11 duration-[0.2s] flex p-2 scale-100 bg-blue-600 hover:bg-blue-700 text-white shadow-lg">
+          <a href="https:&#x2F;&#x2F;nicolamarchiotto.github.io&#x2F;blog/blog">
+            <svg version="1.1" id="_x32_" class="w-7 h-7" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#ffffff"
+              stroke-width="0">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <rect x="293.186" y="307.184" width="131.572" height="112.986"></rect>
+                  <rect x="87.243" y="308.893" width="154.448" height="17.162"></rect>
+                  <rect x="87.243" y="401.298" width="154.448" height="17.162"></rect>
+                  <rect x="87.243" y="355.1" width="154.448" height="17.162"></rect>
+                  <path stroke-width="0"
+                    d="M416.428,0.004H95.58C42.787,0.013,0.016,42.792,0,95.577v303.685 c0.025,62.262,50.463,112.717,112.742,112.734h286.524c62.27-0.017,112.717-50.464,112.734-112.734V95.577 C511.992,42.792,469.212,0.013,416.428,0.004z M464.805,399.262c-0.008,18.15-7.308,34.424-19.198,46.34 c-11.916,11.891-28.19,19.19-46.34,19.198H112.742c-18.15-0.009-34.433-7.308-46.348-19.198 c-11.892-11.916-19.182-28.19-19.198-46.34V118.696h417.61V399.262z">
+                  </path>
+                  <rect x="87.243" y="355.1" width="154.448" height="17.162"></rect>
+                  <path
+                    d="M88.96,267.908h34.583c19.71,0,31.642-8.581,31.642-26.548c0-10.852-6.167-18.368-12.2-20.648v-0.268 c6.034-3.352,10.592-9.519,10.592-19.432c0-14.489-9.251-24.268-29.086-24.268H88.96c-0.796,0-1.332,0.536-1.332,1.34v88.475 C87.628,267.371,88.164,267.908,88.96,267.908z M107.338,193.495c0-0.528,0.251-0.804,0.804-0.804h13.944 c7.5,0,11.925,3.888,11.925,10.584c0,6.712-4.425,10.734-11.925,10.734h-13.944c-0.553,0-0.804-0.268-0.804-0.804V193.495z M107.338,229.955c0-0.528,0.251-0.795,0.804-0.795h15c8.061,0,12.343,4.424,12.343,11.405c0,7.097-4.282,11.396-12.343,11.396h-15 c-0.553,0-0.804-0.276-0.804-0.812V229.955z">
+                  </path>
+                  <path
+                    d="M181.516,267.908h59.404c0.796,0,1.332-0.536,1.332-1.349v-14.874c0-0.813-0.536-1.341-1.332-1.341h-40.224 c-0.544,0-0.804-0.268-0.804-0.812v-71.447c0-0.804-0.528-1.34-1.341-1.34h-17.036c-0.805,0-1.332,0.536-1.332,1.34v88.475 C180.183,267.371,180.711,267.908,181.516,267.908z">
+                  </path>
+                  <path
+                    d="M292.708,269.374c15.963,0,28.558-7.366,33.251-22.115c2.011-6.301,2.539-11.396,2.539-24.938 c0-13.542-0.528-18.637-2.539-24.939c-4.693-14.739-17.288-22.114-33.251-22.114c-15.956,0-28.558,7.375-33.243,22.114 c-2.02,6.302-2.556,11.397-2.556,24.939c0,13.542,0.536,18.637,2.556,24.938C264.149,262.009,276.752,269.374,292.708,269.374z M278.361,202.746c2.011-6.301,6.847-10.055,14.346-10.055c7.508,0,12.335,3.754,14.346,10.055 c1.073,3.226,1.474,7.634,1.474,19.576c0,11.924-0.402,16.357-1.474,19.567c-2.011,6.31-6.838,10.072-14.346,10.072 c-7.5,0-12.335-3.763-14.346-10.072c-1.064-3.21-1.475-7.643-1.475-19.567C276.886,210.38,277.297,205.972,278.361,202.746z">
+                  </path>
+                  <path
+                    d="M387.961,269.374c16.081,0,28.685-8.171,33.251-22.794c1.6-4.952,2.263-12.46,2.263-20.505v-7.517 c0-0.788-0.536-1.333-1.332-1.333h-31.366c-0.813,0-1.349,0.545-1.349,1.333v12.888c0,0.796,0.536,1.332,1.349,1.332h12.326 c0.536,0,0.805,0.277,0.805,0.805c0,3.879-0.403,6.703-1.073,8.991c-1.878,6.026-7.777,9.386-14.614,9.386 c-7.91,0-12.88-3.763-14.891-10.072c-1.064-3.21-1.466-7.643-1.466-19.567c0-11.941,0.402-16.223,1.466-19.441 c2.011-6.302,6.847-10.19,14.631-10.19c7.5,0,12.05,3.218,15.678,9.385c0.269,0.67,0.939,0.939,1.886,0.67l14.338-6.033 c0.796-0.402,0.947-1.206,0.536-2.019c-4.299-10.995-15.419-19.425-32.439-19.425c-16.232,0-28.835,7.375-33.527,22.114 c-2.012,6.302-2.556,11.397-2.556,24.939c0,13.542,0.545,18.637,2.556,24.938C359.126,262.009,371.73,269.374,387.961,269.374z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </a>
+
+        </div>
+        <div
+          class="rounded-full transition-all w-11 h-11 duration-[0.2s] flex p-2 scale-100 bg-blue-600 hover:bg-blue-700 text-white shadow-lg">
+          <a href="https:&#x2F;&#x2F;nicolamarchiotto.github.io&#x2F;blog/publications">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7"
+              stroke="currentColor" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FAB LANGUAGE  -->
+
+  <script>
+    // Overlay images
+    const overlayImages = document.querySelectorAll('.overlay-image');
+    overlayImages.forEach(function(overlayImage) {
+      overlayImage.addEventListener('click', function() {
+        const overlay = document.createElement('div');
+        overlay.classList.add('overlay');
+        overlay.innerHTML = `<img src="${overlayImage.src}" alt="Full Screen Image" class="overlay-image-fullscreen">`;
+
+        document.body.appendChild(overlay);
+        overlay.classList.add('active');
+
+        overlay.addEventListener('click', function() {
+          overlay.classList.remove('active');
+          setTimeout(function() {
+            overlay.remove();
+          }, 300);
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
