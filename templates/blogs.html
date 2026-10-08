@@ -3,15 +3,32 @@
 {% block content %}
 <div class="container max-w-8xl mx-auto pt-8 pb-28 lg:pb-8 ">
 
-  <div class="font-sans">
-    <h1 class="font-bold font-sans break-normal text-gray-900 text-3xl md:text-4xl">{{section.title}}</h1>
+  <div class="flex w-full flex-wrap items-end justify-between gap-4">
+    <h1 class="font-sans text-3xl font-bold break-normal text-gray-900 md:text-4xl">{{ section.title }}</h1>
+    <div class="ml-auto flex items-center gap-4">
+      <button id="blog-sort-toggle" type="button" class="flex cursor-pointer items-center gap-1 whitespace-nowrap text-sm font-semibold text-blue-600 hover:text-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600" aria-label="Current order: newest first">
+        Newest first
+        <svg aria-hidden="true" class="h-3 w-3 transition-transform" fill="none" viewBox="0 0 12 12">
+          <path d="m2 4 4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+        </svg>
+      </button>
+      <button id="blog-about-toggle" type="button" class="flex cursor-pointer items-center gap-1 whitespace-nowrap text-sm font-semibold text-blue-600 hover:text-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600" aria-expanded="false" aria-controls="blog-description">
+        About
+        <svg aria-hidden="true" class="h-3 w-3 transition-transform" fill="none" viewBox="0 0 12 12">
+          <path d="m2 4 4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+        </svg>
+      </button>
+    </div>
   </div>
+  <p id="blog-description" class="mt-4 border-l-2 border-blue-600 px-2 text-sm leading-relaxed text-gray-600" hidden>
+      {{ section.description }}
+  </p>
 
-  <div class="grid gap-4 xl:gap-8 mt-8 md:mt-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full">
+  <div id="blog-posts" class="mt-8 grid w-full grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 xl:gap-8">
     {% for page in section.pages %}
     {% if not page.extra.hide -%}
 
-    <a href="{{config.base_url}}{{page.path}}"
+    <a href="{{config.base_url}}{{page.path}}" data-post-date="{{ page.date | date(format="%Y-%m-%d") }}"
       class="transition-all rounded-lg shadow-lg duration-700 bg-white md:hover:bg-blue-600  md:hover:shadow-xl p-2 relative  group overflow-hidden ">
 
       <div class="py-2 px-2 relative  ">
@@ -34,6 +51,36 @@
   
     {% endfor %}
   </div>
+
+  <script>
+    const aboutToggle = document.getElementById("blog-about-toggle");
+    const blogDescription = document.getElementById("blog-description");
+    aboutToggle.addEventListener("click", () => {
+      const expanded = aboutToggle.getAttribute("aria-expanded") === "true";
+      aboutToggle.setAttribute("aria-expanded", String(!expanded));
+      blogDescription.hidden = expanded;
+      aboutToggle.querySelector("svg").classList.toggle("rotate-180", !expanded);
+    });
+
+    const sortToggle = document.getElementById("blog-sort-toggle");
+    const blogPosts = document.getElementById("blog-posts");
+    const posts = Array.from(blogPosts.querySelectorAll("[data-post-date]"));
+    let newestFirst = posts.length < 2 || posts[0].dataset.postDate >= posts[posts.length - 1].dataset.postDate;
+    sortToggle.firstChild.textContent = newestFirst ? "Newest first " : "Oldest first ";
+    sortToggle.setAttribute("aria-label", `Current order: ${newestFirst ? "newest first" : "oldest first"}`);
+    sortToggle.querySelector("svg").classList.toggle("rotate-180", !newestFirst);
+    sortToggle.addEventListener("click", () => {
+      newestFirst = !newestFirst;
+      posts.sort((a, b) => {
+        const comparison = a.dataset.postDate.localeCompare(b.dataset.postDate);
+        return newestFirst ? -comparison : comparison;
+      });
+      posts.forEach(post => blogPosts.appendChild(post));
+      sortToggle.firstChild.textContent = newestFirst ? "Newest first " : "Oldest first ";
+      sortToggle.setAttribute("aria-label", `Current order: ${newestFirst ? "newest first" : "oldest first"}`);
+      sortToggle.querySelector("svg").classList.toggle("rotate-180", !newestFirst);
+    });
+  </script>
 
 </div>
 {% endblock content %}
