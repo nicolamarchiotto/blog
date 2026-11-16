@@ -12,14 +12,14 @@ title = ""
   position = "CAM Engineer"
   year = "2024-present"
   description = "Developer for NCExpress, CAM solution for Prima Power Press Brakes and Panel Benders."
-  skills = ["C++", "CAM Development"]
+  skills = ["C++", "MFC", "CAM Development", "GitHubCopilot", "Sviluppo CAM", "Agentic Coding", "Jira", "Kineo", "Blender"]
 
 [[extra.experience.works]]
   company = "Exor International"
   position = "Software Engineer"
   year = "2023-present"
   description = "Development of solutions to perform automatic quality assurance in the company production lines. Machine building, optical inspection, ML applications, LLM, software integrations, fault detection."
-  skills = ["ML for Object Detection", "LLM", "Visual Inspection", "Docker", "CoDeSys", " OPC UA", "C++", "Qt"]
+  skills = ["ML Object Detection", "LLM", "Visual Inspection", "Docker", "OpenCV", "Qt", "C++", "OPCUA", "CoDeSys"]
 
 [[extra.experience.works]]
   company = "Altair Robotics Lab"
