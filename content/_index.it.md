@@ -62,9 +62,6 @@ title = ""
 [[extra.avatar_icons]]
   icon = "github"
   link = "https://github.com/nicolamarchiotto"
-[[extra.avatar_icons]]
-  icon = "goodreads"
-  link = "https://www.goodreads.com/user/show/125751772-nicola"
 +++
 
 Sono Nicola Marchiotto, Ingegnere Robotico e Informatico. 
